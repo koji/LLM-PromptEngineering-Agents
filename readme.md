@@ -273,6 +273,17 @@ https://ai-agents-stack.netlify.app/
 | **Gemma-2B**         | Google's SLM                                                                                                                                                                       | [Hugging Face](https://huggingface.co/google/gemma-2b)           |
 | **Llama-3.2-3B**     | The Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). | [Hugging Face](https://huggingface.co/meta-llama/Llama-3.2-3B)   |
 
+### ChatGPT API (Free)
+
+| Repository Name         | Description                                                          | URL                                                |
+| ----------------------- | -------------------------------------------------------------------- | -------------------------------------------------- |
+| ChatGPT API             | Node.js client for the official ChatGPT API                          | https://github.com/transitive-bullshit/chatgpt-api |
+| ChatGPT                 | -                                                                    | https://github.com/acheong08/ChatGPT               |
+| Awesome-GPT4-Prompts    | A collection of awesome GPT4 prompts                                 | https://github.com/ora-sh/Awesome-GPT4-Prompts     |
+| Awesome ChatGpt Prompts | -                                                                    | https://github.com/f/awesome-chatgpt-prompts       |
+| ChatGPTAPIFree          | -                                                                    | https://github.com/ayaka14732/ChatGPTAPIFree       |
+| Bing Chat API           | Node.js wrapper around Bing Chat by Microsoft. TS batteries included | https://github.com/transitive-bullshit/bing-chat   |
+
 ## Libraries
 
 ### bard-ai
