@@ -10,6 +10,7 @@
 - [Agents Framework](#agents-framework)
 - [Large Language Models (LLM)](#llm)
 - [Small Language Models (LLM)](#slm)
+- [Free ChatGPT API](#chatgpt-api-free)
 - [Libraries and SDKs](#libraries)
 - [Desktop Applications](#desktop-app)
 - [Tools](#tools)
