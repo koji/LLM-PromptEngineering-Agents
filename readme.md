@@ -5,7 +5,7 @@
 
 ## Table of Contents
 
-- [ChatGPT and APIs](#chatgpt)
+- [ChatGPT](#chatgpt)
 - [Applications with ChatGPT API](#application-with-chatgpt-api)
 - [Prompt Engineering Resources](#prompt-engineering)
 - [Agents Framework](#agents-framework)
@@ -16,34 +16,6 @@
 - [Tools](#tools)
 - [Other Resources](#others)
 
-## ChatGPT
-
-### ChatGPT API (Free)
-
-Node.js client for the official ChatGPT API.  
-https://github.com/transitive-bullshit/chatgpt-api
-
-### ChatGPT
-
-https://github.com/acheong08/ChatGPT
-
-### Awesome-GPT4-Prompts
-
-A collection of awesome GPT4 prompts.  
-https://github.com/ora-sh/Awesome-GPT4-Prompts
-
-### Awesome ChatGpt Prompts
-
-https://github.com/f/awesome-chatgpt-prompts
-
-### ChatGPTAPIFree
-
-https://github.com/ayaka14732/ChatGPTAPIFree
-
-### Bing Chat API
-
-This package is a Node.js wrapper around Bing Chat by Microsoft. TS batteries included.  
-https://github.com/transitive-bullshit/bing-chat
 
 ## Application with ChatGPT API
 
