@@ -5,7 +5,6 @@
 
 ## Table of Contents
 
-- [ChatGPT](#chatgpt)
 - [Applications with ChatGPT API](#application-with-chatgpt-api)
 - [Prompt Engineering Resources](#prompt-engineering)
 - [Agents Framework](#agents-framework)
