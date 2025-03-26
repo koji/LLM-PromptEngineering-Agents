@@ -180,6 +180,7 @@ https://github.com/dory111111/babyagi-streamlit
 | camel       | CAMEL: Finding the Scaling Law of Agents. The first and the best multi-agent framework.                                                                                             | https://github.com/camel-ai/camel               |
 | AutoGPT     | AutoGPT is a powerful platform that allows you to create, deploy, and manage continuous AI agents that automate complex workflows.                                                  | https://github.com/Significant-Gravitas/AutoGPT |
 | Anda        | 🤖 A framework for AI agent development, designed to build a highly composable, autonomous, and perpetually memorizing network of AI agents.                                        | https://github.com/ldclabs/anda                 |
+| Mastra        | The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.                                       | https://github.com/mastra-ai/mastra                 |
 
 ### AI Agents Stack
 
