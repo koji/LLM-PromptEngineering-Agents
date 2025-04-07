@@ -10,6 +10,7 @@
 - [Agents Framework](#agents-framework)
 - [Large Language Models (LLM)](#llm)
 - [Small Language Models (LLM)](#slm)
+- [MCP](#mcp)
 - [Free ChatGPT API](#chatgpt-api-free)
 - [Prototyping Tool](#prototyping-tool)
 - [Libraries and SDKs](#libraries)
@@ -249,6 +250,14 @@ https://ai-agents-stack.netlify.app/
 | **TinySwallow-1.5B** | TinySwallow-1.5B is a Japanese compact language model created through TAID (Temporally Adaptive Interpolated Distillation), sakana ai's new knowledge distillation method.         | [Hugging Face](https://huggingface.co/SakanaAI/TinySwallow-1.5B) |
 | **Gemma-2B**         | Google's SLM                                                                                                                                                                       | [Hugging Face](https://huggingface.co/google/gemma-2b)           |
 | **Llama-3.2-3B**     | The Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). | [Hugging Face](https://huggingface.co/meta-llama/Llama-3.2-3B)   |
+
+## MCP
+
+- https://github.com/modelcontextprotocol/servers
+- https://www.mcp.run/
+- https://mcp.so/
+- https://glama.ai/mcp/servers
+- https://mcpservers.org/
 
 ### ChatGPT API (Free)
 
