@@ -253,11 +253,14 @@ https://ai-agents-stack.netlify.app/
 
 ## MCP
 
+- https://smithery.ai/
+- https://himcp.ai/
 - https://github.com/modelcontextprotocol/servers
 - https://www.mcp.run/
 - https://mcp.so/
 - https://glama.ai/mcp/servers
 - https://mcpservers.org/
+- https://github.com/punkpeye/awesome-mcp-servers
 
 ### ChatGPT API (Free)
 
