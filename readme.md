@@ -266,6 +266,23 @@ https://ai-agents-stack.netlify.app/
 - https://mcpservers.org/
 - https://github.com/punkpeye/awesome-mcp-servers
 
+## CLI Coding Tools
+
+| Tool         | Main Features & Models Supported                                                     | Usage Context / Notes                                   | CLI Native?           |
+| ------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------- | --------------------- |
+| Claude Code  | Agentic coding, autonomous edits, deep context, Anthropic models                     | Terminal-based, enterprise privacy, NPM install         | Yes                   |
+| Gemini CLI   | Google Gemini models, free tier, IDE integration, web search                         | Terminal utility, open source, NPM install              | Yes                   |
+| Cursor CLI   | Multi-model (GPT-5, Claude, Gemini, Grok), rules/AGENTS.md, IDE/terminal integration | Works in any IDE or terminal, deep workflow integration | Yes                   |
+| Cline        | Agentic coding, file/terminal edits, plan/act modes, multi-model                     | Primarily VS Code extension, CLI variant in development | IDE-first, CLI in dev |
+| Opencode CLI | Open source, customizable prompts/workflows, local model support                     | Power users, full control, Git integration              | Yes                   |
+| Aider        | Git-integrated, conversational code editing, multi-file awareness                    | Deep code collaboration in terminal                     | Yes                   |
+| Codex CLI    | Multi-mode (suggest/edit/run), flexible workflows, OpenAI models                     | Terminal-based, session and file context                | Yes                   |
+| Refact CLI   | Custom command integration, parameterization, output filtering, safety rules         | Integrates AI agents with CLI tools and services        | Yes                   |
+| tabby-cli    | Self-hosted, Rust-based, privacy-focused, local models                               | Terminal-based, privacy emphasis                        | Yes                   |
+| Qwen CLI     | Multilingual code/documentation, Alibaba models                                      | Lightweight, global-facing apps                         | Yes                   |
+| Trae AI      | Natural language to terminal commands, automation                                    | Task execution engine, local/cloud models               | Yes                   |
+| Amazon Q CLI | AWS integration, session/file context, multi-step tasks                              | AWS developer workflows                                 | Yes                   |
+
 ### ChatGPT API (Free)
 
 | Repository Name         | Description                                                          | URL                                                |
