@@ -183,6 +183,7 @@ https://github.com/dory111111/babyagi-streamlit
 | AutoGPT     | AutoGPT is a powerful platform that allows you to create, deploy, and manage continuous AI agents that automate complex workflows.                                                  | https://github.com/Significant-Gravitas/AutoGPT |
 | Anda        | 🤖 A framework for AI agent development, designed to build a highly composable, autonomous, and perpetually memorizing network of AI agents.                                        | https://github.com/ldclabs/anda                 |
 | Mastra      | The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.                                                               | https://github.com/mastra-ai/mastra             |
+| VoltAgent      | TypeScript AI AgentFramework Escape no-code limits and scratch-built overhead. Build, customize, and orchestrate AI agents with full control, speed, and a great DevEx.                                                               | https://github.com/voltagent/voltagent/            |
 
 ### AI Agents Stack
 
