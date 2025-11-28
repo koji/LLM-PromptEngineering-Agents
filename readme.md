@@ -193,17 +193,37 @@ https://ai-agents-stack.netlify.app/
 
 | **Name**                          | **Key Features/Notes**              | **Source**                                                                            |
 | --------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------- |
+| **OpenAI GPT-5.1**                | -                                   | [OpenAI](https://openai.com/index/gpt-5-1/)                                    |
+| **OpenAI GPT-5 mini**                | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-5-mini)                                    |
+| **OpenAI GPT-5 nano**                | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-5-nano)                                    |
+| **OpenAI GPT-5 pro**                | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-5-pro)                                    |
+| **OpenAI GPT-5**                | -                                   | [OpenAI](https://openai.com/index/introducing-gpt-5/)                                    |
+| **OpenAI o4-mini**                | -                                   | [OpenAI](https://openai.com/index/introducing-o3-and-o4-mini/)                                    |
+| **OpenAI o3**                | -                                   | [OpenAI](https://openai.com/index/introducing-o3-and-o4-mini/)                                    |
+| **OpenAI o3-mini**                | -                                   | [OpenAI](https://openai.com/index/openai-o3-mini/)                                    |
+| **OpenAI o3-mini**                | -                                   | [OpenAI](https://openai.com/index/openai-o3-mini/)                                    |
 | **OpenAI o3-mini**                | -                                   | [OpenAI](https://openai.com/index/openai-o3-mini/)                                    |
 | **OpenAI o1**                     | -                                   | [OpenAI](https://openai.com/o1/)                                                      |
 | **OpenAI o1-mini**                | Advancing cost-efficient reasoning. | [OpenAI](https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/) |
 | **GPT-4.5**                       | -                                   | [OpenAI](https://openai.com/index/introducing-gpt-4-5/)                               |
 | **GPT-4o**                        | -                                   | [OpenAI](https://openai.com/index/hello-gpt-4o/)                                      |
 | **GPT-4o mini**                   | -                                   | [OpenAI](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) |
+| **GPT-4.1**                         | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-4.1)               |
 | **GPT-4**                         | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo)               |
 | **GPT-3.5 Turbo**                 | -                                   | [OpenAI]()                                                                            |
+| **Claude Opus 4.5**             | -                                   | [Anthropic](https://www.anthropic.com/news/claude-opus-4-5)                         |
+| **Claude Sonnet 4.5**             | -                                   | [Anthropic](https://www.anthropic.com/claude/sonnet)                         |
+| **Claude Haiku 4.5**             | -                                   | [Anthropic](https://www.anthropic.com/claude/haiku)                         |
+| **Claude Opus 4.1**             | -                                   | [Anthropic](https://www.anthropic.com/news/claude-opus-4-1)                         |
+| **Claude Sonnet 4.1**             | -                                   | [Anthropic]()                         |
+| **Claude Opus 4.0**             | -                                   | [Anthropic](https://www.anthropic.com/news/claude-4)                         |
+| **Claude Sonnet 4.0**             | -                                   | [Anthropic](https://www.anthropic.com/news/claude-4)                         |
 | **Claude 3.7 Sonnet**             | -                                   | [Anthropic](https://www.anthropic.com/news/claude-3-7-sonnet)                         |
 | **Claude 3.5 Haiku**              | -                                   | [Anthropic](https://www.anthropic.com/claude/haiku)                                   |
+| **Gemini 3 Pro**                | -                                   | [Google](https://ai.google.dev/gemini-api/docs/models#gemini-3-pro)       |
 | **Gemini 2.5 Pro**                | -                                   | [Google](https://ai.google.dev/gemini-api/docs/models#gemini-2.5-pro-exp-03-25)       |
+| **Gemini 2.5 Flash**                | -                                   | [Google](https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash)       |
+| **Gemini 2.5 Flash-Lite**                | -                                   | [Google](https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-lite)       |
 | **Gemini 2.0 Flash**              | -                                   | [Google](https://ai.google.dev/gemini-api/docs/models/gemini#gemini-2.0-flash)        |
 | **Gemini 2.0 Flash-Lite Preview** | -                                   | [Google](https://ai.google.dev/gemini-api/docs/models/gemini#gemini-2.0-flash-lite)   |
 | **Gemini 1.5 Flash**              | -                                   | [Google](https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.5-flash)        |
@@ -215,6 +235,8 @@ https://ai-agents-stack.netlify.app/
 
 | **Name**                      | **Key Features/Notes**                                                                                                                                                                                                                                                                                         | **Source**                                                                            |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **DeepSeek-V3.2**            |  This experimental release represents our ongoing research into more efficient transformer architectures, particularly focusing on improving computational efficiency when processing extended text sequences. | [Hugging Face](https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp)    |  
+| **DeepSeek-V3.1**           |  DeepSeek-V3.1 is post-trained on the top of DeepSeek-V3.1-Base, which is built upon the original V3 base checkpoint through a two-phase long context extension approach, following the methodology outlined in the original DeepSeek-V3 report. We have expanded our dataset by collecting additional long documents and substantially extending both training phases. The 32K extension phase has been increased 10-fold to 630B tokens, while the 128K extension phase has been extended by 3.3x to 209B tokens. | [Hugging Face](https://huggingface.co/deepseek-ai/DeepSeek-V3.1)    |  
 | **gpt-oss-120b**           |  for production, general purpose, high reasoning use cases that fit into a single 80GB GPU (like NVIDIA H100 or AMD MI300X) (117B parameters with 5.1B active parameters) | [Hugging Face](https://huggingface.co/openai/gpt-oss-120b)    |      
 | **gpt-oss-20b**           | for lower latency, and local or specialized use cases (21B parameters with 3.6B active parameters) | [Hugging Face](https://huggingface.co/openai/gpt-oss-20b)    |      
 | **phi-4-reasoning**           | Phi-4-reasoning is a state-of-the-art open-weight reasoning model finetuned from Phi-4 using supervised fine-tuning on a dataset of chain-of-thought traces and reinforcement learning.                                                                                                                        | [Hugging Face](https://huggingface.co/microsoft/Phi-4-reasoning)                      |
