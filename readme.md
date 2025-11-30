@@ -291,6 +291,20 @@ https://ai-agents-stack.netlify.app/
 - https://mcpservers.org/
 - https://github.com/punkpeye/awesome-mcp-servers
 
+
+## IDE
+## IDE
+
+| Tool            | Main Features & Models Supported                                                                 | Link                                              |
+|-----------------|--------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| Cursor          | The most useful AI tool that I currently pay for, hands down, is Cursor.                       | [Cursor](https://cursor.com)   |
+| Windsurf        | Windsurf is the most intuitive AI coding experience, built to keep you—and your team—in flow.                            | [Windsurf](https://windsurf.com/) |
+| Antigravity     | Experience liftoff with the next-generation IDE             | [Antigravity](https://antigravity.google/)             |
+| GitHub Copilot  | From strategy to code, GitHub Copilot in Visual Studio Code keeps every project moving forward. | [GitHub Copilot](https://github.com/features/copilot/ai-code-editor)        |
+| Kiro  | Kiro helps you do your best work by bringing structure to AI coding with spec-driven development. | [Kiro](https://kiro.dev/)        |
+| TRAE  | TRAE is your 10x AI Engineer who can independently build software solutions for you. | [Trae](https://www.trae.ai/)        |
+                                                    
+
 ## CLI Coding Tools
 
 | Tool         | Main Features & Models Supported                                                            | Usage Context / Notes                                                           | CLI Native?           | Link                                                                                           |
@@ -309,6 +323,8 @@ https://ai-agents-stack.netlify.app/
 | Trae AI      | Natural language to terminal commands, automation                                           | Task execution engine, local/cloud models                                       | Yes                   | [Trae AI](https://github.com/trae-ai/trae)                                                     |
 | Amazon Q CLI | AWS integration, session/file context, multi-step tasks                                     | AWS developer workflows                                                         | Yes                   | [Amazon Q CLI](https://github.com/aws/aws-q-cli)                                               |
 | Crush        | Glamorous TUI, agentic coding, multi-model (custom endpoints, Ollama, etc.), Markdown rules | Terminal-based, flashy text UI, integrates with IDEs, supports custom providers | Yes                   | [Crush](https://github.com/charmbracelet/crush)
+| Factory        | From IDE to CI/CD - delegate complete tasks like refactors, incident response, and migrations to Droids without changing your tools, models, or workflow. | Terminal-based, flashy text UI, integrates with IDEs, supports custom providers | Yes                   | [Factory](https://factory.ai/)
+
 
 ### ChatGPT API (Free)
 
