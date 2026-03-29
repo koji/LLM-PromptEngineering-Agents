@@ -1,0 +1,14 @@
+# MCP
+
+Model Context Protocol resources and server indexes.
+
+[Back to README](../../readme.md)
+
+- https://smithery.ai/
+- https://himcp.ai/
+- https://github.com/modelcontextprotocol/servers
+- https://www.mcp.run/
+- https://mcp.so/
+- https://glama.ai/mcp/servers
+- https://mcpservers.org/
+- https://github.com/punkpeye/awesome-mcp-servers
