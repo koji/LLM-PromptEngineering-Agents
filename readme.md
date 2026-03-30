@@ -16,17 +16,17 @@ Curated links for ChatGPT, LLMs, prompt engineering, agent frameworks, coding to
 
 | Category | Contents | Page |
 | --- | --- | --- |
-| Applications | ChatGPT API apps, products, and experimental projects | [Applications](docs/categories/applications.md) |
-| Prompt Engineering | Guides, prompt collections, and learning resources | [Prompt Engineering](docs/categories/prompt-engineering.md) |
-| Agent Frameworks | Agent libraries, orchestration frameworks, and reference stacks | [Agent Frameworks](docs/categories/agent-frameworks.md) |
-| Models | Closed models, open models, and small models | [Models](docs/categories/models.md) |
-| MCP | MCP directories and server catalogs | [MCP](docs/categories/mcp.md) |
-| IDE and CLI Tools | AI IDEs, coding CLIs, and free ChatGPT API links | [IDE and CLI Tools](docs/categories/ide-and-cli.md) |
-| Prototyping Tools | Fast interface and demo builders | [Prototyping Tools](docs/categories/prototyping.md) |
-| Libraries | SDKs and developer libraries | [Libraries](docs/categories/libraries.md) |
-| Desktop Applications | Desktop-native clients and apps | [Desktop Applications](docs/categories/desktop-applications.md) |
-| Tools | Search, observability, local model, and sharing tools | [Tools](docs/categories/tools.md) |
-| Other Resources | Miscellaneous repos, references, and adjacent projects | [Other Resources](docs/categories/other-resources.md) |
+| Applications | ChatGPT API apps, products, and experimental projects | [Applications](docs/categories/aplications/readme.md) |
+| Prompt Engineering | Guides, prompt collections, and learning resources | [Prompt Engineering](docs/categories/prompt-engineering/readme.md) |
+| Agent Frameworks | Agent libraries, orchestration frameworks, and reference stacks | [Agent Frameworks](docs/categories/agent-frameworks/readme.md) |
+| Models | Closed models, open models, and small models | [Models](docs/categories/models/readme.md) |
+| MCP | MCP directories and server catalogs | [MCP](docs/categories/mcp/readme.md) |
+| IDE and CLI Tools | AI IDEs, coding CLIs, and free ChatGPT API links | [IDE and CLI Tools](docs/categories/ide-and-cli/readme.md) |
+| Prototyping Tools | Fast interface and demo builders | [Prototyping Tools](docs/categories/prototyping/readme.md) |
+| Libraries | SDKs and developer libraries | [Libraries](docs/categories/libraries/readme.md) |
+| Desktop Applications | Desktop-native clients and apps | [Desktop Applications](docs/categories/desktop-applications/readme.md) |
+| Tools | Search, observability, local model, and sharing tools | [Tools](docs/categories/tools/readme.md) |
+| Other Resources | Miscellaneous repos, references, and adjacent projects | [Other Resources](docs/categories/other-resources/readme.md) |
 
 ## Adding New Resources
 
