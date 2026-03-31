@@ -25,6 +25,7 @@ Curated links for ChatGPT, LLMs, prompt engineering, agent frameworks, coding to
 | Libraries | SDKs and developer libraries | [Libraries](docs/categories/libraries/readme.md) |
 | Desktop Applications | Desktop-native clients and apps | [Desktop Applications](docs/categories/desktop-applications/readme.md) |
 | Tools | Search, observability, local model, and sharing tools | [Tools](docs/categories/tools/readme.md) |
+| OpenClaw | OpenClaw and its variants  | [OpenClaw](docs/categories/openclaw/readme.md) |
 | Other Resources | Miscellaneous repos, references, and adjacent projects | [Other Resources](docs/categories/other-resources/readme.md) |
 
 ## Adding New Resources
