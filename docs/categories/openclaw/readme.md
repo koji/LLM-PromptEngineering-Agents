@@ -24,3 +24,4 @@ OpenClaw and its variants
 |   geminiclaw   | Personal autonomous agent powered by Gemini CLI. Orchestrates scheduling, persistent memory, MCP tools, and multi-channel messaging. |      https://github.com/e-mon/geminiclaw      |
 |   ClawX   | ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal. |      https://github.com/ValueCell-ai/ClawX      |
 |   claw-empire   | Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company. |     https://github.com/GreenSheep01201/claw-empire       |
+|   BlueStacks AI   | Runtime for the Claws OpenClaw —and the AI agents not yet imagined. |     https://bluestacks.ai/      |
