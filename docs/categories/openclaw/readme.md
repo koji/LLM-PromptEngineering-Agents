@@ -25,3 +25,4 @@ OpenClaw and its variants
 |   ClawX   | ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal. |      https://github.com/ValueCell-ai/ClawX      |
 |   claw-empire   | Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company. |     https://github.com/GreenSheep01201/claw-empire       |
 |   BlueStacks AI   | Runtime for the Claws OpenClaw —and the AI agents not yet imagined. |     https://bluestacks.ai/      |
+|   ATOMIC BOT   | The Fastest Way to Run OpenClaw 🦞 |     https://github.com/AtomicBot-ai/atomicbot      |
