@@ -33,6 +33,7 @@ Model references grouped by availability and size.
 | **GPT-4.1**                       | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-4.1)                             |
 | **GPT-4**                         | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo)               |
 | **GPT-3.5 Turbo**                 | -                                   | [OpenAI]()                                                                            |
+| **Claude Opus 4.7**               | -                                   | [Anthropic](https://www.anthropic.com/news/claude-opus-4-7)                           |
 | **Claude Opus 4.6**               | -                                   | [Anthropic](https://www.anthropic.com/news/claude-opus-4-6)                           |
 | **Claude Sonnet 4.6**             | -                                   | [Anthropic](https://www.anthropic.com/claude/sonnet)                                  |
 | **Claude Haiku 4.6**              | -                                   | [Anthropic](https://www.anthropic.com/claude/haiku)                                   |
