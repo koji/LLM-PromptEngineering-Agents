@@ -35,6 +35,7 @@ Model references grouped by availability and size.
 | **GPT-4.1**                       | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-4.1)                             |
 | **GPT-4**                         | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo)               |
 | **GPT-3.5 Turbo**                 | -                                   | [OpenAI]()                                                                            |
+| **Claude Fable 5.1**               | -                                   | [Anthropic](https://www.anthropic.com/claude-fable-and-mythos-5-1)                       |
 | **Claude Opus 5**               | -                                   | [Anthropic](https://www.anthropic.com/news/claude-opus-5)                       |
 | **Claude Fable 5**               | -                                   | [Anthropic](https://www.anthropic.com/news/redeploying-fable-5)                       |
 | **Claude Sonnet 5**               | -                                   | [Anthropic](https://www.anthropic.com/news/claude-sonnet-5)                           |
