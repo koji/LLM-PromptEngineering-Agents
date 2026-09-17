@@ -10,6 +10,7 @@ Model references grouped by availability and size.
 
 | **Name**                          | **Key Features/Notes**              | **Source**                                                                            |
 | --------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------- |
+| **OpenAI GPT-6**                | -                                   | [OpenAI](https://openai.com/index/gpt-6-astra/)                               |
 | **OpenAI GPT-5.6**                | -                                   | [OpenAI](https://openai.com/index/gpt-5-6/)                               |
 | **OpenAI GPT-5.5**                | -                                   | [OpenAI](https://openai.com/index/introducing-gpt-5-5/)                               |
 | **OpenAI GPT-5.4 mini/nano**      | -                                   | [OpenAI](https://openai.com/index/introducing-gpt-5-4-mini-and-nano/)                 |
