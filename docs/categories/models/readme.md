@@ -10,7 +10,10 @@ Model references grouped by availability and size.
 
 | **Name**                          | **Key Features/Notes**              | **Source**                                                                            |
 | --------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------- |
-| **OpenAI GPT-6**                | -                                   | [OpenAI](https://openai.com/index/gpt-6-astra/)                               |
+| **OpenAI GPT-6.1 Sol**            | Released at DevDay, Sep 29, 2026. $2 input / $10 output per 1M tokens; 99.7% on ExploitBench (max effort). | [OpenAI](https://openai.com/index/gpt-6-1-sol/)                               |
+| **OpenAI GPT-6 Sol**              | Released Sep 22, 2026. $2 input / $10 output per 1M tokens; replaces the entire GPT-5.6 tier. | [OpenAI](https://openai.com/index/gpt-6-sol/)                                 |
+| **OpenAI GPT-6 Luna**             | Released Sep 22, 2026. $0.10 input / $0.50 output per 1M tokens; high-volume efficiency tier. | [OpenAI](https://openai.com/index/gpt-6-luna/)                                |
+| **OpenAI GPT-6 Astra**            | Released Sep 3, 2026. 1.05M-token context, 128K max output; top-tier flagship. | [OpenAI](https://openai.com/index/gpt-6-astra/)                               |
 | **OpenAI GPT-5.6**                | -                                   | [OpenAI](https://openai.com/index/gpt-5-6/)                               |
 | **OpenAI GPT-5.5**                | -                                   | [OpenAI](https://openai.com/index/introducing-gpt-5-5/)                               |
 | **OpenAI GPT-5.4 mini/nano**      | -                                   | [OpenAI](https://openai.com/index/introducing-gpt-5-4-mini-and-nano/)                 |
@@ -35,6 +38,9 @@ Model references grouped by availability and size.
 | **GPT-4.1**                       | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-4.1)                             |
 | **GPT-4**                         | -                                   | [OpenAI](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo)               |
 | **GPT-3.5 Turbo**                 | -                                   | [OpenAI]()                                                                            |
+| **Claude Opus 5.5**                 | Released Sep 22, 2026. $4 input / $20 output per 1M tokens; 66.4% on Terminal-Bench 4.0 (xhigh effort). | [Anthropic](https://www.anthropic.com/news/claude-opus-5-5)                  |
+| **Claude Sonnet 5.5**               | Released Sep 28, 2026. Same $2/$10 pricing as Sonnet 5, 30%+ faster output. | [Anthropic](https://www.anthropic.com/news/claude-sonnet-5-5)                 |
+| **Claude Mythos 5.1**               | Released Sep 1, 2026. Same weights as Fable 5.1; restricted to vetted orgs. | [Anthropic](https://www.anthropic.com/claude-fable-and-mythos-5-1)            |
 | **Claude Fable 5.1**               | -                                   | [Anthropic](https://www.anthropic.com/claude-fable-and-mythos-5-1)                       |
 | **Claude Opus 5**               | -                                   | [Anthropic](https://www.anthropic.com/news/claude-opus-5)                       |
 | **Claude Fable 5**               | -                                   | [Anthropic](https://www.anthropic.com/news/redeploying-fable-5)                       |
