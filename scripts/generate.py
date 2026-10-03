@@ -534,6 +534,17 @@ h3.sub { margin: 20px 0 4px; font-size: 1.05rem; color: var(--muted); }
 .card .meta { display: flex; flex-wrap: wrap; gap: 6px; }
 .badge { font-size: 0.72rem; border-radius: 999px; padding: 2px 8px;
   background: var(--chip); color: var(--accent); }
+.table-scroll { overflow-x: auto; margin-top: 12px;
+  border: 1px solid var(--border); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem;
+  background: var(--card); }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border);
+  vertical-align: top; }
+thead th { color: var(--muted); font-weight: 600; white-space: nowrap;
+  background: var(--card); }
+tbody tr:last-child td { border-bottom: none; }
+td a { color: var(--accent); }
+td { min-width: 120px; }
 .result-count { color: var(--muted); margin: 20px 0 4px; }
 .empty { color: var(--muted); padding: 40px 0; text-align: center; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border);
@@ -580,6 +591,70 @@ function card(e) {
     `<div class="meta">${tags}${extra}</div></div>`;
 }
 
+function cellHtml(e, field, nameBold) {
+  if (field === "name") {
+    const n = nameBold ? `<strong>${esc(e.name)}</strong>` : esc(e.name);
+    return e.url
+      ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${n}</a>`
+      : n;
+  }
+  if (field === "summary") return esc(e.summary || "-");
+  if (field === "source") {
+    if (e.url) {
+      const label = e.url_label || e.url;
+      return `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(label)}</a>`;
+    }
+    return esc(e.url_label || "-");
+  }
+  if (field === "url") {
+    return e.url
+      ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.url)}</a>`
+      : "";
+  }
+  if (field.startsWith("extra.")) {
+    return esc(((e.extra || {})[field.slice(6)] || ""));
+  }
+  return esc(e[field] || "");
+}
+
+function tableHtml(sec, items) {
+  const th = sec.headers.map((h) => `<th>${esc(h)}</th>`).join("");
+  const rows = items.map((e) => {
+    const tds = sec.fields
+      .map((f) => `<td>${cellHtml(e, f, sec.name_bold)}</td>`)
+      .join("");
+    return `<tr>${tds}</tr>`;
+  }).join("");
+  return `<div class="table-scroll"><table><thead><tr>${th}</tr></thead>` +
+    `<tbody>${rows}</tbody></table></div>`;
+}
+
+function renderCategory(c, items) {
+  if (c.layout === "table") {
+    let h = "";
+    for (const s of c.sections || []) {
+      const secItems = items.filter((e) => (e.section || "") === (s.name || ""));
+      if (!secItems.length) continue;
+      if (s.format === "prose") {
+        h += `<div class="grid">${secItems.map(card).join("")}</div>`;
+        continue;
+      }
+      if (s.name) h += `<h3 class="sub">${esc(s.name)}</h3>`;
+      const main = secItems.filter((e) => !e.subsection);
+      const subs = s.subsections || [];
+      if (main.length || !subs.length) h += tableHtml(s, main);
+      for (const sub of subs) {
+        const subItems = secItems.filter((e) => e.subsection === sub.name);
+        if (!subItems.length) continue;
+        h += `<h3 class="sub">${esc(sub.name)}</h3>`;
+        h += tableHtml(sub, subItems);
+      }
+    }
+    return h;
+  }
+  return `<div class="grid">${items.map(card).join("")}</div>`;
+}
+
 function catTitle(slug) {
   const c = DATA.categories.find((c) => c.slug === slug);
   return c ? c.title : slug;
@@ -592,26 +667,20 @@ function render() {
   let h = "";
   if (filtering) {
     h += `<div class="result-count">${list.length} result${list.length === 1 ? "" : "s"}</div>`;
-    h += `<div class="grid">${list.map(card).join("")}</div>`;
     if (!list.length) h += `<div class="empty">No matches. Try a different search.</div>`;
-  } else {
-    for (const c of DATA.categories) {
-      const items = list.filter((e) => e.category === c.slug);
-      if (!items.length) continue;
-      h += `<h2 class="cat">${esc(c.title)}</h2>`;
+  }
+  const cats = state.cat === "all"
+    ? DATA.categories
+    : DATA.categories.filter((c) => c.slug === state.cat);
+  for (const c of cats) {
+    const items = list.filter((e) => e.category === c.slug);
+    if (!items.length) continue;
+    h += `<h2 class="cat">${esc(c.title)}</h2>`;
+    if (!filtering) {
       if (c.image) h += `<img class="banner" loading="lazy" src="images/${esc(c.image)}" alt="${esc(c.title)}">`;
       if (c.description) h += `<p class="cat-desc">${esc(c.description)}</p>`;
-      const sections = [...new Set(items.map((e) => e.section || ""))];
-      if (sections.length > 1 || (sections.length === 1 && sections[0])) {
-        for (const s of sections) {
-          const sub = items.filter((e) => (e.section || "") === s);
-          if (s) h += `<h3 class="sub">${esc(s)}</h3>`;
-          h += `<div class="grid">${sub.map(card).join("")}</div>`;
-        }
-      } else {
-        h += `<div class="grid">${items.map(card).join("")}</div>`;
-      }
     }
+    h += renderCategory(c, items);
   }
   main.innerHTML = h;
   document.querySelectorAll("#catchips .chip").forEach((el) => {
@@ -710,6 +779,26 @@ def build_site(data, out_dir, repo_url):
                 "title": c["title"],
                 "description": c.get("description") or "",
                 "image": c.get("image") or "",
+                "layout": c["layout"],
+                "sections": [
+                    {
+                        "name": s.get("name"),
+                        "format": s.get("format", "table"),
+                        "headers": s.get("headers") or [],
+                        "fields": s.get("fields") or [],
+                        "name_bold": s.get("name_bold", False),
+                        "subsections": [
+                            {
+                                "name": x.get("name"),
+                                "headers": x.get("headers") or [],
+                                "fields": x.get("fields") or [],
+                                "name_bold": x.get("name_bold", False),
+                            }
+                            for x in s.get("subsections") or []
+                        ],
+                    }
+                    for s in c.get("sections") or []
+                ],
             }
             for c in data["categories"]
         ],
