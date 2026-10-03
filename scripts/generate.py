@@ -507,6 +507,19 @@ header.top p { margin: 0; color: var(--muted); }
   border: 1px solid var(--border); background: var(--card); color: var(--fg);
 }
 .filters { padding: 12px 0 4px; display: flex; flex-wrap: wrap; gap: 8px; }
+.tabs { display: flex; gap: 2px; overflow-x: auto; margin-top: 10px;
+  border-bottom: 1px solid var(--border); }
+.tab { background: none; border: none; padding: 10px 14px; font-size: 0.9rem;
+  color: var(--muted); cursor: pointer; white-space: nowrap;
+  border-bottom: 2px solid transparent; margin-bottom: -1px; font-family: inherit; }
+.tab:hover { color: var(--fg); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.tab small { opacity: 0.7; }
+.cat-card { text-align: left; background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px; cursor: pointer; color: var(--fg); font: inherit; }
+.cat-card:hover { border-color: var(--accent); }
+.cat-card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.cat-card p { margin: 0 0 10px; font-size: 0.88rem; color: var(--muted); }
 .chip {
   border: 1px solid var(--border); background: var(--card); color: var(--fg);
   border-radius: 999px; padding: 6px 12px; font-size: 0.85rem; cursor: pointer;
@@ -554,7 +567,7 @@ footer a { color: var(--accent); }
 
 SITE_JS = """
 const DATA = __DATA_JSON__;
-const state = { q: "", cat: "all", tags: new Set() };
+const state = { q: "", tab: "all", tags: new Set() };
 const $ = (s) => document.querySelector(s);
 
 function esc(s) {
@@ -563,17 +576,19 @@ function esc(s) {
     .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-function match(e) {
-  if (state.cat !== "all" && e.category !== state.cat) return false;
+function matchTags(e) {
   for (const t of state.tags) {
     if (!(e.tags || []).includes(t)) return false;
   }
-  if (state.q) {
-    const hay = [e.name, e.summary, e.category, (e.tags || []).join(" ")]
-      .join(" ").toLowerCase();
-    for (const tok of state.q.toLowerCase().split(/\\s+/)) {
-      if (tok && !hay.includes(tok)) return false;
-    }
+  return true;
+}
+
+function matchQuery(e) {
+  if (!state.q) return true;
+  const hay = [e.name, e.summary, e.category, (e.tags || []).join(" ")]
+    .join(" ").toLowerCase();
+  for (const tok of state.q.toLowerCase().split(/\\s+/)) {
+    if (tok && !hay.includes(tok)) return false;
   }
   return true;
 }
@@ -660,44 +675,84 @@ function catTitle(slug) {
   return c ? c.title : slug;
 }
 
-function render() {
-  const list = DATA.entries.filter(match);
-  const main = $("#results");
-  const filtering = state.q || state.cat !== "all" || state.tags.size > 0;
+function groupedHtml(list) {
   let h = "";
-  if (filtering) {
-    h += `<div class="result-count">${list.length} result${list.length === 1 ? "" : "s"}</div>`;
-    if (!list.length) h += `<div class="empty">No matches. Try a different search.</div>`;
-  }
-  const cats = state.cat === "all"
-    ? DATA.categories
-    : DATA.categories.filter((c) => c.slug === state.cat);
-  for (const c of cats) {
+  for (const c of DATA.categories) {
     const items = list.filter((e) => e.category === c.slug);
     if (!items.length) continue;
     h += `<h2 class="cat">${esc(c.title)}</h2>`;
-    if (!filtering) {
-      if (c.image) h += `<img class="banner" loading="lazy" src="images/${esc(c.image)}" alt="${esc(c.title)}">`;
-      if (c.description) h += `<p class="cat-desc">${esc(c.description)}</p>`;
-    }
     h += renderCategory(c, items);
   }
+  return h;
+}
+
+function overviewHtml() {
+  const counts = {};
+  DATA.entries.forEach((e) => { counts[e.category] = (counts[e.category] || 0) + 1; });
+  const cards = DATA.categories.map((c) => {
+    const n = counts[c.slug] || 0;
+    return `<button class="cat-card" data-tab="${esc(c.slug)}">` +
+      `<h3>${esc(c.title)}</h3>` +
+      (c.description ? `<p>${esc(c.description)}</p>` : "") +
+      `<span class="badge">${n} entr${n === 1 ? "y" : "ies"}</span></button>`;
+  }).join("");
+  return `<div class="result-count">${DATA.entries.length} entries across ` +
+    `${DATA.categories.length} categories</div><div class="grid">${cards}</div>`;
+}
+
+function render() {
+  const main = $("#results");
+  const tagSec = $("#tagsection");
+  let h = "";
+  if (state.q) {
+    // global cross-category search
+    const list = DATA.entries.filter((e) => matchTags(e) && matchQuery(e));
+    h += `<div class="result-count">${list.length} result${list.length === 1 ? "" : "s"}</div>`;
+    if (!list.length) {
+      h += `<div class="empty">No matches. Try a different search.</div>`;
+    } else {
+      h += groupedHtml(list);
+    }
+    tagSec.style.display = "";
+  } else if (state.tab === "all") {
+    h += overviewHtml();
+    tagSec.style.display = "none";
+  } else {
+    const c = DATA.categories.find((c) => c.slug === state.tab);
+    const items = DATA.entries.filter(
+      (e) => e.category === c.slug && matchTags(e)
+    );
+    h += `<h2 class="cat">${esc(c.title)}</h2>`;
+    if (c.image) h += `<img class="banner" loading="lazy" src="images/${esc(c.image)}" alt="${esc(c.title)}">`;
+    if (c.description) h += `<p class="cat-desc">${esc(c.description)}</p>`;
+    h += renderCategory(c, items);
+    tagSec.style.display = "";
+  }
   main.innerHTML = h;
-  document.querySelectorAll("#catchips .chip").forEach((el) => {
-    el.classList.toggle("active", el.dataset.cat === state.cat);
+  document.querySelectorAll("#tabs .tab").forEach((el) => {
+    el.classList.toggle("active", el.dataset.tab === state.tab);
   });
   document.querySelectorAll("#tagchips .chip").forEach((el) => {
     el.classList.toggle("active", state.tags.has(el.dataset.tag));
   });
 }
 
+function selectTab(slug) {
+  state.tab = slug;
+  state.q = "";
+  const q = $("#q");
+  if (q) q.value = "";
+  render();
+  window.scrollTo({ top: 0 });
+}
+
 function init() {
   const counts = {};
   DATA.entries.forEach((e) => { counts[e.category] = (counts[e.category] || 0) + 1; });
-  $("#catchips").innerHTML =
-    `<button class="chip" data-cat="all">All <small>${DATA.entries.length}</small></button>` +
+  $("#tabs").innerHTML =
+    `<button class="tab" data-tab="all">All</button>` +
     DATA.categories.map((c) =>
-      `<button class="chip" data-cat="${esc(c.slug)}">${esc(c.title)} <small>${counts[c.slug] || 0}</small></button>`
+      `<button class="tab" data-tab="${esc(c.slug)}">${esc(c.title)} <small>${counts[c.slug] || 0}</small></button>`
     ).join("");
   const tcounts = {};
   DATA.entries.forEach((e) => (e.tags || []).forEach((t) => { tcounts[t] = (tcounts[t] || 0) + 1; }));
@@ -705,9 +760,13 @@ function init() {
   $("#tagchips").innerHTML = tags.map((t) =>
     `<button class="chip tag" data-tag="${esc(t)}">${esc(t)} <small>${tcounts[t]}</small></button>`
   ).join("");
-  $("#catchips").addEventListener("click", (ev) => {
-    const b = ev.target.closest(".chip"); if (!b) return;
-    state.cat = b.dataset.cat; render();
+  $("#tabs").addEventListener("click", (ev) => {
+    const b = ev.target.closest(".tab"); if (!b) return;
+    selectTab(b.dataset.tab);
+  });
+  $("#results").addEventListener("click", (ev) => {
+    const b = ev.target.closest(".cat-card"); if (!b) return;
+    selectTab(b.dataset.tab);
   });
   $("#tagchips").addEventListener("click", (ev) => {
     const b = ev.target.closest(".chip"); if (!b) return;
@@ -741,10 +800,11 @@ SITE_HTML = """<!doctype html>
 <input id="q" type="search" placeholder="Search models, tools, frameworks…" autocomplete="off">
 </div></div>
 <div class="wrap">
-<div class="section-label">Categories</div>
-<div class="filters" id="catchips"></div>
+<div class="tabs" id="tabs" role="tablist"></div>
+<div id="tagsection">
 <div class="section-label">Tags</div>
 <div class="filters" id="tagchips"></div>
+</div>
 <main id="results"></main>
 <footer>
 Generated from <a href="__REPO_URL__/blob/main/data/entries.yml"><code>data/entries.yml</code></a>.
