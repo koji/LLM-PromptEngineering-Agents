@@ -1,4 +1,4 @@
-![desktop-applications](./desktop-applications.png)
+![desktop-applications](./desktop-applications.webp)
 
 # Desktop Applications
 

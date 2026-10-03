@@ -1,4 +1,5 @@
-![prototyping](./prototyping)
+![prototyping](./prototyping.webp)
+
 # Prototyping Tools
 
 Rapid app-building tools for demos and lightweight AI interfaces.

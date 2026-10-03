@@ -1,4 +1,4 @@
-![applications](./applications.png)
+![applications](./applications.webp)
 
 # Applications
 
@@ -53,7 +53,7 @@ https://github.com/Vision-CAIR/MiniGPT-4
 
 ## CAMEL
 
-Communicative Agents for “Mind” Exploration of Large Scale Language Model Society.
+Communicative Agents for “Mind” Exploration of Large Scale Language Model Society.  
 https://github.com/lightaime/camel
 
 ## Taxy

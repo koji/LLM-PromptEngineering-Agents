@@ -1,4 +1,5 @@
-![tools](./tools.png)
+![tools](./tools.webp)
+
 # Tools
 
 Supporting tools, platforms, and utilities around LLM workflows.

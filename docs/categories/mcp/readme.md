@@ -1,4 +1,4 @@
-![mcp](./mcp.png)
+![mcp](./mcp.webp)
 
 # MCP
 
