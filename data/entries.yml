@@ -2288,3 +2288,87 @@ entries:
   url: https://github.com/domeccleston/sharegpt
   tags:
   - tools
+- name: obra/superpowers
+  category: skills
+  section: null
+  summary: An agentic skills framework and software development methodology for AI coding agents.
+  url: https://github.com/obra/superpowers
+  tags:
+  - skills
+- name: mattpocock/skills
+  category: skills
+  section: null
+  summary: Skills for Real Engineers, straight from the author's .agents directory.
+  url: https://github.com/mattpocock/skills
+  tags:
+  - skills
+- name: anthropics/skills
+  category: skills
+  section: null
+  summary: Anthropic's public repository for Agent Skills, the open agent skills standard.
+  url: https://github.com/anthropics/skills
+  tags:
+  - skills
+- name: JuliusBrussee/caveman
+  category: skills
+  section: null
+  summary: Viral skill and proxy for coding agents that cuts token usage by talking like a caveman.
+  url: https://github.com/JuliusBrussee/caveman
+  tags:
+  - skills
+- name: addyosmani/agent-skills
+  category: skills
+  section: null
+  summary: Production-grade engineering skills for AI coding agents.
+  url: https://github.com/addyosmani/agent-skills
+  tags:
+  - skills
+- name: tt-a1i/archify
+  category: skills
+  section: null
+  summary: Agent skill for beautiful, verifiable architecture, workflow, sequence, and data-flow diagrams.
+  url: https://github.com/tt-a1i/archify
+  tags:
+  - skills
+- name: mvanhorn/last30days-skill
+  category: skills
+  section: null
+  summary: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web.
+  url: https://github.com/mvanhorn/last30days-skill
+  tags:
+  - skills
+- name: blader/humanizer
+  category: skills
+  section: null
+  summary: Agent skill that removes signs of AI-generated writing from text.
+  url: https://github.com/blader/humanizer
+  tags:
+  - skills
+- name: ayghri/i-have-adhd
+  category: skills
+  section: null
+  summary: A skill to stop your coding agent from burying the answer; ADHD-friendly output.
+  url: https://github.com/ayghri/i-have-adhd
+  tags:
+  - skills
+- name: coreyhaines31/marketingskills
+  category: skills
+  section: null
+  summary: 'Marketing skills for Claude Code and AI agents: CRO, copywriting, SEO, and analytics.'
+  url: https://github.com/coreyhaines31/marketingskills
+  tags:
+  - skills
+- name: kepano/obsidian-skills
+  category: skills
+  section: null
+  summary: Agent skills for Obsidian; teach your agent to use the Obsidian CLI and open formats.
+  url: https://github.com/kepano/obsidian-skills
+  tags:
+  - skills
+- name: K-Dense-AI/scientific-agent-skills
+  category: skills
+  section: null
+  summary: 'Agent skills library for science: validated skills and scientific databases for biology, chemistry, and medicine.'
+  url: https://github.com/K-Dense-AI/scientific-agent-skills
+  tags:
+  - skills
