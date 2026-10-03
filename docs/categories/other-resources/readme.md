@@ -1,4 +1,4 @@
-![other-resources](./other-resources.png)
+![other-resources](./other-resources.webp)
 
 # Other Resources
 

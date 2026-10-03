@@ -1,0 +1,2290 @@
+# entries.yml — source of truth for category pages and the browse site.
+# Edit this file, then run: python3 scripts/generate.py
+# Schema: docs/data-schema.md
+categories:
+- slug: agent-frameworks
+  title: Agent Frameworks
+  layout: table
+  description: Frameworks and reference stacks for building agentic systems.
+  image: agent-frameworks.webp
+  image_alt: agent-frameworks
+  sections:
+  - fields:
+    - name
+    - summary
+    - url
+    headers:
+    - Name
+    - Description
+    - URL
+    name_bold: false
+  - name: AI Agents Stack
+    format: prose
+- slug: aplications
+  title: Applications
+  layout: sections
+  description: Applications and end-user projects built around ChatGPT or adjacent LLM workflows.
+  image: applications.webp
+  image_alt: applications
+- slug: desktop-applications
+  title: Desktop Applications
+  layout: sections
+  description: Desktop-native applications for LLM usage.
+  image: desktop-applications.webp
+  image_alt: desktop-applications
+- slug: ide-and-cli
+  title: IDE and CLI Tools
+  layout: table
+  description: Editor-first and terminal-first tools for AI-assisted coding workflows.
+  image: ide-and-cli.webp
+  image_alt: ide-and-cli
+  sections:
+  - name: IDE
+    fields:
+    - name
+    - summary
+    - source
+    headers:
+    - Tool
+    - Main Features & Models Supported
+    - Link
+    name_bold: false
+  - name: CLI Coding Tools
+    fields:
+    - name
+    - summary
+    - extra.usage
+    - extra.cli_native
+    - source
+    headers:
+    - Tool
+    - Main Features & Models Supported
+    - Usage Context / Notes
+    - CLI Native?
+    - Link
+    name_bold: false
+    subsections:
+    - name: ChatGPT API (Free)
+      fields:
+      - name
+      - summary
+      - url
+      headers:
+      - Repository Name
+      - Description
+      - URL
+      name_bold: false
+- slug: libraries
+  title: Libraries
+  layout: sections
+  description: Libraries and SDKs for building LLM-powered products.
+  image: libraries.webp
+  image_alt: libraries
+- slug: mcp
+  title: MCP
+  layout: list
+  description: Model Context Protocol resources and server indexes.
+  image: mcp.webp
+  image_alt: mcp
+- slug: models
+  title: Models
+  layout: table
+  description: Model references grouped by availability and size.
+  image: models.webp
+  image_alt: models
+  sections:
+  - name: Closed Models
+    fields:
+    - name
+    - summary
+    - source
+    headers:
+    - Name
+    - Key Features/Notes
+    - Source
+    name_bold: true
+  - name: Open Weight Models
+    fields:
+    - name
+    - summary
+    - source
+    headers:
+    - Name
+    - Key Features/Notes
+    - Source
+    name_bold: true
+  - name: Small Models
+    fields:
+    - name
+    - summary
+    - source
+    headers:
+    - Name
+    - Key Features/Notes
+    - Source
+    name_bold: true
+- slug: openclaw
+  title: OpenClaw
+  layout: table
+  description: OpenClaw and its variants
+  sections:
+  - fields:
+    - name
+    - summary
+    - url
+    headers:
+    - Name
+    - Description
+    - URL
+    name_bold: false
+- slug: other-resources
+  title: Other Resources
+  layout: sections
+  description: Miscellaneous repositories, references, and adjacent projects.
+  image: other-resources.webp
+  image_alt: other-resources
+- slug: prompt-engineering
+  title: Prompt Engineering
+  layout: table
+  description: Guides, prompt collections, and learning resources for prompt design.
+  image: prompt-engineering.webp
+  image_alt: prompt-engineering
+  sections:
+  - fields:
+    - name
+    - summary
+    - url
+    headers:
+    - Name
+    - Description
+    - URL
+    name_bold: false
+- slug: prototyping
+  title: Prototyping Tools
+  layout: table
+  description: Rapid app-building tools for demos and lightweight AI interfaces.
+  image: prototyping.webp
+  image_alt: prototyping
+  sections:
+  - fields:
+    - name
+    - summary
+    - url
+    headers:
+    - Name
+    - Description
+    - URL
+    name_bold: false
+- slug: skills
+  title: Skills
+  layout: sections
+- slug: tools
+  title: Tools
+  layout: sections
+  description: Supporting tools, platforms, and utilities around LLM workflows.
+  image: tools.webp
+  image_alt: tools
+entries:
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: AutoGen
+  summary: AutoGen is a framework for creating multi-agent AI applications that can act autonomously or work alongside humans
+  url: https://github.com/microsoft/autogen
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: phidata
+  summary: Build multi-modal Agents with memory, knowledge, tools and reasoning. Chat with them using a beautiful Agent UI
+  url: https://github.com/phidatahq/phidata
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: Swarm
+  summary: Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team
+  url: https://github.com/openai/swarm
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: crewAI
+  summary: Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks
+  url: https://github.com/crewAIInc/crewAI
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: LangGraph
+  summary: Build resilient language agents as graphs
+  url: https://github.com/langchain-ai/langgraph
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: pydantic-ai
+  summary: Agent Framework / shim to use Pydantic with LLMs
+  url: https://github.com/pydantic/pydantic-ai
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: DSPy
+  summary: The framework for programming—not prompting—language models
+  url: https://github.com/stanfordnlp/dspy
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: smolagents
+  summary: 'smolagents: a barebones library for agents. Agents write python code to call tools and orchestrate other agents'
+  url: https://github.com/huggingface/smolagents
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: eliza
+  summary: eliza is a simple, fast, and lightweight AI agent framework
+  url: https://github.com/elizaOS/eliza
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: camel
+  summary: 'CAMEL: Finding the Scaling Law of Agents. The first and the best multi-agent framework.'
+  url: https://github.com/camel-ai/camel
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: AutoGPT
+  summary: AutoGPT is a powerful platform that allows you to create, deploy, and manage continuous AI agents that automate complex workflows.
+  url: https://github.com/Significant-Gravitas/AutoGPT
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: Anda
+  summary: 🤖 A framework for AI agent development, designed to build a highly composable, autonomous, and perpetually memorizing network of AI agents.
+  url: https://github.com/ldclabs/anda
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: Mastra
+  summary: 'The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.'
+  url: https://github.com/mastra-ai/mastra
+- category: agent-frameworks
+  section: null
+  tags: []
+  name: VoltAgent
+  summary: TypeScript AI AgentFramework Escape no-code limits and scratch-built overhead. Build, customize, and orchestrate AI agents with full control, speed, and a great DevEx.
+  url: https://github.com/voltagent/voltagent/
+- name: AI Agents Stack
+  category: agent-frameworks
+  section: AI Agents Stack
+  summary: ''
+  url: https://ai-agents-stack.netlify.app/
+  tags:
+  - ai-agents-stack
+- name: Danswer
+  category: aplications
+  section: null
+  summary: Danswer allows you to ask natural language questions against internal documents and get back reliable answers backed by quotes and references from the source material so that you can always trust what you get back. You can connect to a number of common tools such as Slack, GitHub, Confluence, amongst others.
+  url: https://github.com/danswer-ai/danswer
+  tags:
+  - aplications
+- name: DocsGPT
+  category: aplications
+  section: null
+  summary: DocsGPT is a cutting-edge open-source solution that streamlines the process of finding information in project documentation. With its integration of the powerful GPT models, developers can easily ask questions about a project and receive accurate answers.
+  url: https://github.com/arc53/DocsGPT
+  tags:
+  - aplications
+- name: Open Interpreter
+  category: aplications
+  section: null
+  summary: Open Interpreter lets LLMs run code (Python, Javascript, Shell, and more) locally. You can chat with Open Interpreter through a ChatGPT-like interface in your terminal by running $ interpreter after installing.
+  url: https://github.com/KillianLucas/open-interpreter
+  tags:
+  - aplications
+- name: ViLT-GPT
+  category: aplications
+  section: null
+  summary: ViLT-GPT is an innovative application that gives the conversational AI ChatGPT the ability to "see". By integrating OpenAI's Language Models (LLM) and LangChain with Vision-and-Language models, this app can answer queries based on the content of images. Now, you can interact with your images, ask questions and get informative responses.
+  url: https://github.com/CodeAlchemyAI/ViLT-GPT
+  tags:
+  - aplications
+- name: MetaGPT
+  category: aplications
+  section: null
+  summary: '🌟 The Multi-Agent Framework: Given one line Requirement, return PRD, Design, Tasks, Repo'
+  url: https://github.com/geekan/MetaGPT
+  tags:
+  - aplications
+- name: gpt-author
+  category: aplications
+  section: null
+  summary: A 15-chapter novel can cost as little as $4 to produce and is written in just a few minutes.
+  url: https://github.com/mshumer/gpt-author
+  tags:
+  - aplications
+- name: GPT Engineer
+  category: aplications
+  section: null
+  summary: GPT Engineer is made to be easy to adapt, extend, and make your agent learn how you want your code to look. It generates an entire codebase based on a prompt.
+  url: https://github.com/AntonOsika/gpt-engineer
+  tags:
+  - aplications
+- name: GPT Deploy
+  category: aplications
+  section: null
+  summary: Turn your natural language descriptions into fully functional, deployed AI-powered microservices with a single command! Your imagination is the limit!
+  url: https://github.com/jina-ai/gptdeploy
+  tags:
+  - aplications
+- name: MiniGPT-4
+  category: aplications
+  section: null
+  summary: Enhancing Vision-language Understanding with Advanced Large Language Models
+  url: https://github.com/Vision-CAIR/MiniGPT-4
+  tags:
+  - aplications
+- name: CAMEL
+  category: aplications
+  section: null
+  summary: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society.
+  url: https://github.com/lightaime/camel
+  tags:
+  - aplications
+- name: Taxy
+  category: aplications
+  section: null
+  summary: Taxy uses GPT-4 to control your browser and perform repetitive actions on your behalf. Currently it allows you to define ad-hoc instructions. In the future it will also support saved and scheduled workflows.
+  url: https://github.com/TaxyAI/browser-extension
+  tags:
+  - aplications
+- name: roomGPT
+  category: aplications
+  section: null
+  summary: This project generates new designs of your room with AI.
+  url: https://github.com/Nutlope/roomGPT
+  tags:
+  - aplications
+- name: ChatGPTFreeApp
+  category: aplications
+  section: null
+  summary: ''
+  url: https://github.com/ztjhz/ChatGPTFreeApp
+  tags:
+  - aplications
+- name: Visual ChatGPT
+  category: aplications
+  section: null
+  summary: Visual ChatGPT connects ChatGPT and a series of Visual Foundation Models to enable sending and receiving images during chatting.
+  url: https://github.com/microsoft/visual-chatgpt
+  tags:
+  - aplications
+- name: researchgpt
+  category: aplications
+  section: null
+  summary: ''
+  url: https://github.com/mukulpatnaik/researchgpt
+  tags:
+  - aplications
+- name: AIShader
+  category: aplications
+  section: null
+  summary: This is a proof-of-concept implementation of a ChatGPT-powered shader generator for Unity.
+  url: https://github.com/keijiro/AIShader
+  tags:
+  - aplications
+- name: ChatGPT
+  category: aplications
+  section: null
+  summary: It is an unofficial project intended for personal learning and research purposes only. During the time that the ChatGPT desktop application was open-sourced.
+  url: https://github.com/lencx/ChatGPT
+  tags:
+  - aplications
+- name: ChatGPT-bot(telegram)
+  category: aplications
+  section: null
+  summary: Go CLI to fuels a Telegram bot that lets you interact with ChatGPT, a large language model trained by OpenAI.
+  url: https://github.com/m1guelpf/chatgpt-telegram
+  tags:
+  - aplications
+- name: ChatGPT Prompt Genius
+  category: aplications
+  section: null
+  summary: ChatGPT Prompt Genius, a free, open-source browser extension that helps you 🔍 discover, share, import, and use the best prompts for ChatGPT. You can also 💾 save your chat history locally so you can easily review past conversations and refer to them at a later time.
+  url: https://github.com/benf2004/ChatGPT-Prompt-Genius
+  tags:
+  - aplications
+- name: ChatHub
+  category: aplications
+  section: null
+  summary: ChatHub is an all-in-one chatbot client.
+  url: https://github.com/chathub-dev/chathub
+  tags:
+  - aplications
+- name: WebChatGPT
+  category: aplications
+  section: null
+  summary: This browser extension adds web access capability to ChatGPT. Get much more relevant and up-to-date answers from the chatbot!
+  url: https://github.com/qunash/chatgpt-advanced
+  tags:
+  - aplications
+- name: gpt-macro
+  category: aplications
+  section: null
+  summary: ChatGPT powered Rust proc macro that generates code at compile-time.
+  url: https://github.com/retrage/gpt-macro
+  tags:
+  - aplications
+- name: ChatGeoPT
+  category: aplications
+  section: null
+  summary: A very basic, very brittle proof of concept for an AI assistant for geospatial search
+  url: https://github.com/earth-genome/ChatGeoPT
+  tags:
+  - aplications
+- name: Auto-GPT
+  category: aplications
+  section: null
+  summary: An experimental open-source attempt to make GPT-4 fully autonomous.
+  url: https://github.com/Torantulino/Auto-GPT
+  tags:
+  - aplications
+- name: ChatGPT Plugins Collection ⭐️ (unofficial)
+  category: aplications
+  section: null
+  summary: 'An unofficial collection of Plugins for ChatGPT, in any programming language! Note: This is not an official OpenAI or ChatGPT related repository.'
+  url: https://github.com/logankilpatrick/ChatGPT-Plugins-Collection
+  tags:
+  - aplications
+- name: babyagi
+  category: aplications
+  section: null
+  summary: This Python script is an example of an AI-powered task management system. The system uses OpenAI and Pinecone APIs to create, prioritize, and execute tasks. The main idea behind this system is that it creates tasks based on the result of previous tasks and a predefined objective. The script then uses OpenAI's natural language processing (NLP) capabilities to create new tasks based on the objective, and Pinecone to store and retrieve task results for context. This is a pared-down version of the original Task-Driven Autonomous Agent.
+  url: https://github.com/yoheinakajima/babyagi
+  tags:
+  - aplications
+- name: babyagi-streamlit
+  category: aplications
+  section: null
+  summary: ''
+  url: https://github.com/dory111111/babyagi-streamlit
+  tags:
+  - aplications
+- name: BingGPT
+  category: desktop-applications
+  section: null
+  summary: Desktop application of new Bing's AI-powered chatDesktop application of new Bing's AI-powered chatDesktop application of new Bing's AI-powered chat
+  url: https://github.com/dice2o/BingGPT
+  tags:
+  - desktop-applications
+- category: ide-and-cli
+  section: IDE
+  tags:
+  - ide
+  name: Cursor
+  summary: The most useful AI tool that I currently pay for, hands down, is Cursor.
+  url: https://cursor.com
+  url_label: Cursor
+- category: ide-and-cli
+  section: IDE
+  tags:
+  - ide
+  name: Windsurf
+  summary: Windsurf is the most intuitive AI coding experience, built to keep you—and your team—in flow.
+  url: https://windsurf.com/
+  url_label: Windsurf
+- category: ide-and-cli
+  section: IDE
+  tags:
+  - ide
+  name: Antigravity
+  summary: Experience liftoff with the next-generation IDE
+  url: https://antigravity.google/
+  url_label: Antigravity
+- category: ide-and-cli
+  section: IDE
+  tags:
+  - ide
+  name: GitHub Copilot
+  summary: From strategy to code, GitHub Copilot in Visual Studio Code keeps every project moving forward.
+  url: https://github.com/features/copilot/ai-code-editor
+  url_label: GitHub Copilot
+- category: ide-and-cli
+  section: IDE
+  tags:
+  - ide
+  name: Kiro
+  summary: Kiro helps you do your best work by bringing structure to AI coding with spec-driven development.
+  url: https://kiro.dev/
+  url_label: Kiro
+- category: ide-and-cli
+  section: IDE
+  tags:
+  - ide
+  name: TRAE
+  summary: TRAE is your 10x AI Engineer who can independently build software solutions for you.
+  url: https://www.trae.ai/
+  url_label: Trae
+- category: ide-and-cli
+  section: IDE
+  tags:
+  - ide
+  name: Kilo Code
+  summary: 'Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent. #1 coding agent on OpenRouter. 1.5M+ Kilo Coders. 25T+ tokens processed'
+  url: https://kilo.ai/
+  url_label: Kilo
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Claude Code
+  summary: Agentic coding, autonomous edits, deep context, Anthropic models
+  extra:
+    usage: Terminal-based, enterprise privacy, NPM install
+    cli_native: 'Yes'
+  url: https://www.anthropic.com/claude-code
+  url_label: Claude Code
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Gemini CLI
+  summary: Google Gemini models, free tier, IDE integration, web search
+  extra:
+    usage: Terminal utility, open source, NPM install
+    cli_native: 'Yes'
+  url: https://github.com/google-gemini/gemini-cli
+  url_label: Gemini CLI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Cursor CLI
+  summary: Multi-model (GPT-5, Claude, Gemini, Grok), rules/AGENTS.md, IDE/terminal integration
+  extra:
+    usage: Works in any IDE or terminal, deep workflow integration
+    cli_native: 'Yes'
+  url: https://cursor.com/cli
+  url_label: Cursor CLI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Kilo Code CLI
+  summary: Orchestrate agents from your terminal. Plan, debug, and code fast with keyboard-first navigation on the command line.
+  extra:
+    usage: Terminal-based, enterprise privacy, NPM install
+    cli_native: 'Yes'
+  url: https://kilo.ai/docs/cli
+  url_label: Kilo Code CLI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Cline
+  summary: Agentic coding, file/terminal edits, plan/act modes, multi-model
+  extra:
+    usage: Primarily VS Code extension, CLI variant in development
+    cli_native: IDE-first, CLI in dev
+  url: https://github.com/cline/cline
+  url_label: Cline
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Opencode CLI
+  summary: Open source, customizable prompts/workflows, local model support
+  extra:
+    usage: Power users, full control, Git integration
+    cli_native: 'Yes'
+  url: https://github.com/opencode-ai/opencode
+  url_label: Opencode CLI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Aider
+  summary: Git-integrated, conversational code editing, multi-file awareness
+  extra:
+    usage: Deep code collaboration in terminal
+    cli_native: 'Yes'
+  url: https://github.com/paul-gauthier/aider
+  url_label: Aider
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Codex CLI
+  summary: Multi-mode (suggest/edit/run), flexible workflows, OpenAI models
+  extra:
+    usage: Terminal-based, session and file context
+    cli_native: 'Yes'
+  url: https://github.com/openai/codex-cli
+  url_label: Codex CLI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Refact CLI
+  summary: Custom command integration, parameterization, output filtering, safety rules
+  extra:
+    usage: Integrates AI agents with CLI tools and services
+    cli_native: 'Yes'
+  url: https://docs.refact.ai/features/autonomous-agent/integrations/command-line-tool/
+  url_label: Refact CLI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: tabby-cli
+  summary: Self-hosted, Rust-based, privacy-focused, local models
+  extra:
+    usage: Terminal-based, privacy emphasis
+    cli_native: 'Yes'
+  url: https://github.com/tabby-ai/tabby
+  url_label: tabby-cli
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Qwen CLI
+  summary: Multilingual code/documentation, Alibaba models
+  extra:
+    usage: Lightweight, global-facing apps
+    cli_native: 'Yes'
+  url: https://github.com/QwenLM/Qwen-CLI
+  url_label: Qwen CLI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Trae AI
+  summary: Natural language to terminal commands, automation
+  extra:
+    usage: Task execution engine, local/cloud models
+    cli_native: 'Yes'
+  url: https://github.com/trae-ai/trae
+  url_label: Trae AI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Amazon Q CLI
+  summary: AWS integration, session/file context, multi-step tasks
+  extra:
+    usage: AWS developer workflows
+    cli_native: 'Yes'
+  url: https://github.com/aws/aws-q-cli
+  url_label: Amazon Q CLI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Crush
+  summary: Glamorous TUI, agentic coding, multi-model (custom endpoints, Ollama, etc.), Markdown rules
+  extra:
+    usage: Terminal-based, flashy text UI, integrates with IDEs, supports custom providers
+    cli_native: 'Yes'
+  url: https://github.com/charmbracelet/crush
+  url_label: Crush
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: Mastra Code
+  summary: Mastra Code is a terminal-based AI coding agent built on Mastra's Harness, Agent, and Memory primitives. It runs in your terminal, connects to 70+ AI models, and provides tools for reading, searching, editing, and executing code.
+  extra:
+    usage: Terminal-based, flashy text UI, integrates with IDEs, supports custom providers
+    cli_native: 'Yes'
+  url: https://code.mastra.ai/
+  url_label: Mastra Code
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: OpenHands-CLI
+  summary: Run OpenHands agent inside your terminal, favorite IDE, CI pipelines, local browser, or secure OpenHands Cloud sandboxes.
+  extra:
+    usage: Terminal-based, flashy text UI, integrates with IDEs, supports custom providers
+    cli_native: 'Yes'
+  url: https://github.com/OpenHands/OpenHands-CLI
+  url_label: OpenHands-CLI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: GitHub Copilot CLI
+  summary: Run a GitHub-native agent in your terminal that works directly with your issues and pull requests, executes across a /fleet of parallelized subagents, and carries you from /plan to merged code.
+  extra:
+    usage: Terminal-based, flashy text UI, integrates with IDEs, supports custom providers
+    cli_native: 'Yes'
+  url: https://github.com/features/copilot/cli
+  url_label: GitHub Copilot CLI
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  name: pi-mono
+  summary: 'AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods'
+  extra:
+    usage: Terminal-based, flashy text UI, integrates with WebUI, supports custom providers,  NPM install
+    cli_native: 'Yes'
+  url: https://github.com/badlogic/pi-mono
+  url_label: pi-mono
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  - chatgpt-api-free
+  subsection: ChatGPT API (Free)
+  name: ChatGPT API
+  summary: Node.js client for the official ChatGPT API
+  url: https://github.com/transitive-bullshit/chatgpt-api
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  - chatgpt-api-free
+  subsection: ChatGPT API (Free)
+  name: ChatGPT
+  summary: ''
+  url: https://github.com/acheong08/ChatGPT
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  - chatgpt-api-free
+  subsection: ChatGPT API (Free)
+  name: Awesome-GPT4-Prompts
+  summary: A collection of awesome GPT4 prompts
+  url: https://github.com/ora-sh/Awesome-GPT4-Prompts
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  - chatgpt-api-free
+  subsection: ChatGPT API (Free)
+  name: Awesome ChatGpt Prompts
+  summary: ''
+  url: https://github.com/f/awesome-chatgpt-prompts
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  - chatgpt-api-free
+  subsection: ChatGPT API (Free)
+  name: ChatGPTAPIFree
+  summary: ''
+  url: https://github.com/ayaka14732/ChatGPTAPIFree
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
+  - chatgpt-api-free
+  subsection: ChatGPT API (Free)
+  name: Bing Chat API
+  summary: Node.js wrapper around Bing Chat by Microsoft. TS batteries included
+  url: https://github.com/transitive-bullshit/bing-chat
+- name: bard-ai
+  category: libraries
+  section: null
+  summary: A lightweight library to access Google Bard.
+  url: https://github.com/EvanZhouDev/bard-ai
+  tags:
+  - libraries
+- name: autollm
+  category: libraries
+  section: null
+  summary: Ship RAG based LLM web apps in seconds.
+  url: https://github.com/safevideo/autollm
+  tags:
+  - libraries
+- name: Agents
+  category: libraries
+  section: null
+  summary: An Open-source Framework for Autonomous Language Agents
+  url: https://github.com/aiwaves-cn/agents
+  tags:
+  - libraries
+- name: kani (カニ)
+  category: libraries
+  section: null
+  summary: kani (カニ) is a lightweight and highly hackable framework for chat-based language models with tool usage/function calling.
+  url: https://github.com/zhudotexe/kani
+  tags:
+  - libraries
+- name: LangChain
+  category: libraries
+  section: null
+  summary: Large language models (LLMs) are emerging as a transformative technology, enabling developers to build applications that they previously could not. But using these LLMs in isolation is often not enough to create a truly powerful app - the real power comes when you can combine them with other sources of computation or knowledge.
+  url: https://github.com/hwchase17/langchain
+  tags:
+  - libraries
+- name: LLM Engine
+  category: libraries
+  section: null
+  summary: The open source engine for fine-tuning and serving large language models.
+  url: https://github.com/scaleapi/llm-engine
+  tags:
+  - libraries
+- name: ai-utils.js
+  category: libraries
+  section: null
+  summary: TypeScript-first library for building AI apps, chatbots, and agents.
+  url: https://github.com/lgrammel/ai-utils.js
+  tags:
+  - libraries
+- name: LangChain.js
+  category: libraries
+  section: null
+  summary: Building applications with LLMs through composability
+  url: https://github.com/hwchase17/langchainjs
+  tags:
+  - libraries
+- name: Chatbot UI
+  category: libraries
+  section: null
+  summary: Chatbot UI is an advanced chatbot kit for OpenAI's chat models built on top of Chatbot UI Lite using Next.js, TypeScript, and Tailwind CSS.
+  url: https://github.com/mckaywrigley/chatbot-ui
+  tags:
+  - libraries
+- name: LlamaIndex
+  category: libraries
+  section: null
+  summary: LlamaIndex (GPT Index) is a project that provides a central interface to connect your LLM's with external data.
+  url: https://github.com/jerryjliu/llama_index
+  tags:
+  - libraries
+- name: OpenChatKit
+  category: libraries
+  section: null
+  summary: OpenChatKit provides a powerful, open-source base to create both specialized and general purpose chatbots for various applications.
+  url: https://github.com/togethercomputer/OpenChatKit
+  tags:
+  - libraries
+- name: Vercel AI SDK
+  category: libraries
+  section: null
+  summary: The Vercel AI SDK is a library for building edge-ready AI-powered streaming text and chat UIs.
+  url: https://github.com/vercel-labs/ai
+  tags:
+  - libraries
+- name: smithery.ai
+  category: mcp
+  section: null
+  summary: ''
+  url: https://smithery.ai/
+  tags:
+  - mcp
+- name: himcp.ai
+  category: mcp
+  section: null
+  summary: ''
+  url: https://himcp.ai/
+  tags:
+  - mcp
+- name: github.com/modelcontextprotocol/servers
+  category: mcp
+  section: null
+  summary: ''
+  url: https://github.com/modelcontextprotocol/servers
+  tags:
+  - mcp
+- name: mcp.run
+  category: mcp
+  section: null
+  summary: ''
+  url: https://www.mcp.run/
+  tags:
+  - mcp
+- name: mcp.so
+  category: mcp
+  section: null
+  summary: ''
+  url: https://mcp.so/
+  tags:
+  - mcp
+- name: glama.ai/mcp/servers
+  category: mcp
+  section: null
+  summary: ''
+  url: https://glama.ai/mcp/servers
+  tags:
+  - mcp
+- name: mcpservers.org
+  category: mcp
+  section: null
+  summary: ''
+  url: https://mcpservers.org/
+  tags:
+  - mcp
+- name: github.com/punkpeye/awesome-mcp-servers
+  category: mcp
+  section: null
+  summary: ''
+  url: https://github.com/punkpeye/awesome-mcp-servers
+  tags:
+  - mcp
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-6.1 Sol
+  summary: Released at DevDay, Sep 29, 2026. $2 input / $10 output per 1M tokens; 99.7% on ExploitBench (max effort).
+  url: https://openai.com/index/gpt-6-1-sol/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-6 Sol
+  summary: Released Sep 22, 2026. $2 input / $10 output per 1M tokens; replaces the entire GPT-5.6 tier.
+  url: https://openai.com/index/gpt-6-sol/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-6 Luna
+  summary: Released Sep 22, 2026. $0.10 input / $0.50 output per 1M tokens; high-volume efficiency tier.
+  url: https://openai.com/index/gpt-6-luna/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-6 Astra
+  summary: Released Sep 3, 2026. 1.05M-token context, 128K max output; top-tier flagship.
+  url: https://openai.com/index/gpt-6-astra/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5.6
+  summary: ''
+  url: https://openai.com/index/gpt-5-6/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5.5
+  summary: ''
+  url: https://openai.com/index/introducing-gpt-5-5/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5.4 mini/nano
+  summary: ''
+  url: https://openai.com/index/introducing-gpt-5-4-mini-and-nano/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5.4
+  summary: ''
+  url: https://openai.com/index/introducing-gpt-5-4/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5.3
+  summary: ''
+  url: https://openai.com/index/introducing-gpt-5-3-codex/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5.2
+  summary: ''
+  url: https://openai.com/index/introducing-gpt-5-2/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5.1
+  summary: ''
+  url: https://openai.com/index/gpt-5-1/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5 mini
+  summary: ''
+  url: https://platform.openai.com/docs/models/gpt-5-mini
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5 nano
+  summary: ''
+  url: https://platform.openai.com/docs/models/gpt-5-nano
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5 pro
+  summary: ''
+  url: https://platform.openai.com/docs/models/gpt-5-pro
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI GPT-5
+  summary: ''
+  url: https://openai.com/index/introducing-gpt-5/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI o4-mini
+  summary: ''
+  url: https://openai.com/index/introducing-o3-and-o4-mini/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI o3
+  summary: ''
+  url: https://openai.com/index/introducing-o3-and-o4-mini/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI o3-mini
+  summary: ''
+  url: https://openai.com/index/openai-o3-mini/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI o1
+  summary: ''
+  url: https://openai.com/o1/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: OpenAI o1-mini
+  summary: Advancing cost-efficient reasoning.
+  url: https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: GPT-4.5
+  summary: ''
+  url: https://openai.com/index/introducing-gpt-4-5/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: GPT-4o
+  summary: ''
+  url: https://openai.com/index/hello-gpt-4o/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: GPT-4o mini
+  summary: ''
+  url: https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: GPT-4.1
+  summary: ''
+  url: https://platform.openai.com/docs/models/gpt-4.1
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: GPT-4
+  summary: ''
+  url: https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: GPT-3.5 Turbo
+  summary: ''
+  url: null
+  url_label: OpenAI
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Opus 5.5
+  summary: Released Sep 22, 2026. $4 input / $20 output per 1M tokens; 66.4% on Terminal-Bench 4.0 (xhigh effort).
+  url: https://www.anthropic.com/news/claude-opus-5-5
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Sonnet 5.5
+  summary: Released Sep 28, 2026. Same $2/$10 pricing as Sonnet 5, 30%+ faster output.
+  url: https://www.anthropic.com/news/claude-sonnet-5-5
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Mythos 5.1
+  summary: Released Sep 1, 2026. Same weights as Fable 5.1; restricted to vetted orgs.
+  url: https://www.anthropic.com/claude-fable-and-mythos-5-1
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Fable 5.1
+  summary: ''
+  url: https://www.anthropic.com/claude-fable-and-mythos-5-1
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Opus 5
+  summary: ''
+  url: https://www.anthropic.com/news/claude-opus-5
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Fable 5
+  summary: ''
+  url: https://www.anthropic.com/news/redeploying-fable-5
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Sonnet 5
+  summary: ''
+  url: https://www.anthropic.com/news/claude-sonnet-5
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Opus 4.8
+  summary: ''
+  url: https://www.anthropic.com/news/claude-opus-4-8
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Opus 4.7
+  summary: ''
+  url: https://www.anthropic.com/news/claude-opus-4-7
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Opus 4.6
+  summary: ''
+  url: https://www.anthropic.com/news/claude-opus-4-6
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Sonnet 4.6
+  summary: ''
+  url: https://www.anthropic.com/claude/sonnet
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Haiku 4.6
+  summary: ''
+  url: https://www.anthropic.com/claude/haiku
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Opus 4.5
+  summary: ''
+  url: https://www.anthropic.com/news/claude-opus-4-5
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Sonnet 4.5
+  summary: ''
+  url: https://www.anthropic.com/claude/sonnet
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Haiku 4.5
+  summary: ''
+  url: https://www.anthropic.com/claude/haiku
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Opus 4.1
+  summary: ''
+  url: https://www.anthropic.com/news/claude-opus-4-1
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Sonnet 4.1
+  summary: ''
+  url: null
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Opus 4.0
+  summary: ''
+  url: https://www.anthropic.com/news/claude-4
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude Sonnet 4.0
+  summary: ''
+  url: https://www.anthropic.com/news/claude-4
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude 3.7 Sonnet
+  summary: ''
+  url: https://www.anthropic.com/news/claude-3-7-sonnet
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Claude 3.5 Haiku
+  summary: ''
+  url: https://www.anthropic.com/claude/haiku
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 3.1 Pro
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 3 Flash
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 3 Flash-Lite
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-preview
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 3 Pro
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models#gemini-3-pro
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 2.5 Pro
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models#gemini-2.5-pro-exp-03-25
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 2.5 Flash
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 2.5 Flash-Lite
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-lite
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 2.0 Flash
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models/gemini#gemini-2.0-flash
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 2.0 Flash-Lite Preview
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models/gemini#gemini-2.0-flash-lite
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 1.5 Flash
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.5-flash
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 1.5 Flash-8B
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.5-flash-8b
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 1.5 Pro
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.5-pro
+  url_label: Google
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
+  name: Gemini 1.0 Pro (deprecated)
+  summary: ''
+  url: https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.0-pro
+  url_label: Google
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Qwen/Qwen3.8-2.4T-A95B
+  summary: 2.4T total / 95B active MoE (92 layers, 512 experts); 262K native context extensible to ~1M via YaRN; first Qwen-Max-class model released as open weights.
+  url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Qwen/Qwen3.8-27B
+  summary: 27B dense native multimodal (text/image/video); 262K context (YaRN to 1M); hybrid Gated DeltaNet + Gated Attention; Apache 2.0.
+  url: https://huggingface.co/Qwen/Qwen3.8-27B
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: zai-org/GLM-5.3
+  summary: ~320B total / 18B active MoE; first natively multimodal entry in the GLM-5 generation; ~1M context.
+  url: https://huggingface.co/zai-org/GLM-5.3
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: deepseek-ai/DeepSeek-V4.1-Flash
+  summary: 552B MoE backbone + 196B "Engram" conditional memory; 8B active on prefill / 16B on decode; 1M context, up to 384K output; MIT.
+  url: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: deepseek-ai/DeepSeek-V4-Flash-0731
+  summary: ~284B / ~13B active MoE; 1M context; MIT; top-3 open weight on Artificial Analysis Intelligence Index.
+  url: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: XiaomiMiMo/MiMo-V2.6-Pro-RL
+  summary: 1.02T total / 42B active frozen-router MoE; natively omnimodal (text/image/video/audio); 1M context; MIT.
+  url: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: XiaomiMiMo/MiMo-V2.6-Flash-RL
+  summary: 309B total / 15B active MoE; omnimodal; 1M context; MIT.
+  url: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: NaiveAI/Naive-N0.5-Flash
+  summary: 309B / 15.5B active MoE; native 1M context with no full-attention layers; 73.6% SWE-bench Pro (self-reported); MIT.
+  url: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: tencent/Hy4-preview
+  summary: Hy4 preview is a new-generation Mixture-of-Experts (MoE) flagship model developed by the Tencent Hy Team. The model comprises 770B total parameters, of which 49B are activated per token. The backbone consists of 78 layers, where the first layer uses a standard dense FFN and the remaining 77 layers replace it with MoE, each containing 256 routed experts and 1 shared expert; every token activates the top-8 routed experts along with the shared expert. In addition to the backbone, 1 native MTP layer (10B total parameters, 0.7B activated) is built in for speculative decoding.
+  url: https://huggingface.co/tencent/Hy4-preview
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: tencent/Hy3
+  summary: Hy3 is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters and 3.8B MTP layer parameters, developed by the Tencent Hy Team. Following the Hy3 Preview launch in late April, we gathered feedback from 50+ products and scaled up post-training with higher quality data. Today, we introduce Hy3, which outperforms similar-size models and rivals flagship open-source models with 2-5x parameters. It also shows significant gains in utility across various products and productivity tasks.
+  url: https://huggingface.co/tencent/Hy3
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: meta-models/Muse-Glimmer-30B
+  summary: Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access.
+  url: https://huggingface.co/meta-models/Muse-Glimmer-30B
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: moonshotai/Kimi-K3
+  summary: Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world's first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and reasoning.
+  url: https://huggingface.co/moonshotai/Kimi-K3
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: moonshotai/Kimi-K2.7-Code
+  summary: Kimi K2.7 Code is a coding-focused agentic model built upon Kimi K2.6. With substantial improvements on real-world long-horizon coding tasks, it strengthens end-to-end task completion across complex software engineering workflows while improving token efficiency, reducing thinking-token usage by approximately 30% compared with Kimi K2.6.
+  url: https://huggingface.co/moonshotai/Kimi-K2.7-Code
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: moonshotai/Kimi-K2.6
+  summary: Kimi K2.6 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration.
+  url: https://huggingface.co/moonshotai/Kimi-K2.6
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: moonshotai/Kimi-K2.5
+  summary: Kimi K2.5 is an open-source, native multimodal agentic model built through continual pretraining on approximately 15 trillion mixed visual and text tokens atop Kimi-K2-Base. It seamlessly integrates vision and language understanding with advanced agentic capabilities, instant and thinking modes, as well as conversational and agentic paradigms.
+  url: https://huggingface.co/moonshotai/Kimi-K2.5
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: google/gemma-4-12B
+  summary: Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages.
+  url: https://huggingface.co/google/gemma-4-12B
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: deepseek-ai/DeepSeek-V4-Pro
+  summary: '1. **Hybrid Attention Architecture**: We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only 27% of single-token inference FLOPs and 10% of KV cache compared with DeepSeek-V3.<br><br>2. **Manifold-Constrained Hyper-Connections (mHC)**: We incorporate mHC to strengthen conventional residual connections, enhancing stability of signal propagation across layers while preserving model expressivity.<br><br>3. **Muon Optimizer**: We employ the Muon optimizer for faster convergence and greater training stability.'
+  url: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: google/gemma-4-31B
+  summary: Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages.
+  url: https://huggingface.co/google/gemma-4-31B
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: google/gemma-4-26B-A4B
+  summary: Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages.
+  url: https://huggingface.co/google/gemma-4-26B-A4B
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: GLM-5.2
+  summary: GLM‑5.2 is Z.ai’s latest flagship large language model designed specifically for long‑horizon tasks. It represents a major upgrade over GLM‑5.1, delivering a stable 1‑million‑token context window, enabling sustained reasoning, long‑form workflows, and large‑scale code or document understanding.
+  url: https://huggingface.co/zai-org/GLM-5.2
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: GLM-5.1
+  summary: GLM-5.1, by contrast, is built to stay effective on agentic tasks over much longer horizons. We've found that the model handles ambiguous problems with better judgment and stays productive over longer sessions. It breaks complex problems down, runs experiments, reads results, and identifies blockers with real precision. By revisiting its reasoning and revising its strategy through repeated iteration, GLM-5.1 sustains optimization over hundreds of rounds and thousands of tool calls. The longer it runs, the better the result.
+  url: https://huggingface.co/zai-org/GLM-5.1
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: GLM-5
+  summary: ', GLM-5 delivers significant improvement compared to GLM-4.7 across a wide range of academic benchmarks and achieves best-in-class performance among all open-source models in the world on reasoning, coding, and agentic tasks, closing the gap with frontier models.'
+  url: https://huggingface.co/zai-org/GLM-5
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: GLM-4.7
+  summary: 'GLM-4.7, your new coding partner, is coming with the following features:Core Coding: GLM-4.7 brings clear gains, compared to its predecessor GLM-4.6, in multilingual agentic coding and terminal-based tasks, including (73.8%, +5.8%) on SWE-bench, (66.7%, +12.9%) on SWE-bench Multilingual, and (41%, +16.5%) on Terminal Bench 2.0. GLM-4.7 also supports thinking before acting, with significant improvements on complex tasks in mainstream agent frameworks such as Claude Code, Kilo Code, Cline, and Roo Code.Vibe Coding: GLM-4.7 takes a big step forward in improving UI quality. It produces cleaner, more modern webpages and generates better-looking slides with more accurate layout and sizing.Tool Using: GLM-4.7 achieves significantly improvements in Tool using. Significant better performances can be seen on benchmarks such as τ^2-Bench and on web browsing via BrowseComp.Complex Reasoning: GLM-4.7 delivers a substantial boost in mathematical and reasoning capabilities, achieving (42.8%, +12.4%) on the HLE (Humanity’s Last Exam) benchmark compared to GLM-4.6.'
+  url: https://huggingface.co/zai-org/GLM-4.7
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: GLM-4.6
+  summary: GLM-4.6 is a large language model from Zhipu AI, known for its strong agentic, reasoning, and coding capabilities. It is an open-weight model with a \(200K\) context window and is designed to be competitive with models like Claude Sonnet 4.
+  url: https://huggingface.co/zai-org/GLM-4.6
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: DeepSeek-V3.2
+  summary: This experimental release represents our ongoing research into more efficient transformer architectures, particularly focusing on improving computational efficiency when processing extended text sequences.
+  url: https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: DeepSeek-V3.1
+  summary: DeepSeek-V3.1 is post-trained on the top of DeepSeek-V3.1-Base, which is built upon the original V3 base checkpoint through a two-phase long context extension approach, following the methodology outlined in the original DeepSeek-V3 report. We have expanded our dataset by collecting additional long documents and substantially extending both training phases. The 32K extension phase has been increased 10-fold to 630B tokens, while the 128K extension phase has been extended by 3.3x to 209B tokens.
+  url: https://huggingface.co/deepseek-ai/DeepSeek-V3.1
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: gpt-oss-120b
+  summary: for production, general purpose, high reasoning use cases that fit into a single 80GB GPU (like NVIDIA H100 or AMD MI300X) (117B parameters with 5.1B active parameters)
+  url: https://huggingface.co/openai/gpt-oss-120b
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: gpt-oss-20b
+  summary: for lower latency, and local or specialized use cases (21B parameters with 3.6B active parameters)
+  url: https://huggingface.co/openai/gpt-oss-20b
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: phi-4-reasoning
+  summary: Phi-4-reasoning is a state-of-the-art open-weight reasoning model finetuned from Phi-4 using supervised fine-tuning on a dataset of chain-of-thought traces and reinforcement learning.
+  url: https://huggingface.co/microsoft/Phi-4-reasoning
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Qwen3.7
+  summary: Qwen3.7
+  url: https://qwen.ai/blog?id=qwen3.7
+  url_label: Qwen3.7
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Qwen3.6
+  summary: Qwen3.6 series
+  url: https://huggingface.co/collections/Qwen/qwen36
+  url_label: Qwen3.6
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Qwen3.5
+  summary: Qwen3.5 series
+  url: https://huggingface.co/collections/Qwen/qwen35
+  url_label: Qwen3.5
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Qwen3 LLM
+  summary: The next version of the Qwen LLM series, Qwen3, brings a new level of advancement in both natural language processing and multimodal capabilities.
+  url: https://qwen3.org/
+  url_label: Qwen3
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: phi-4
+  summary: Focused on high-quality data and advanced reasoning; blend of synthetic and curated datasets.
+  url: https://huggingface.co/microsoft/phi-4
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: DeepSeek-V3
+  summary: Breakthrough in inference speed; rivals top closed-source models.
+  url: https://www.deepseek.com/
+  url_label: DeepSeek
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: DeepSeek-R1
+  summary: Breakthrough in inference speed; rivals top closed-source models.
+  url: https://github.com/deepseek-ai/DeepSeek-R1
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Falcon 2
+  summary: Details unspecified (assumed part of Falcon LLM series).
+  url: https://falconllm.tii.ae/
+  url_label: Falcon LLM
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Llama4
+  summary: The most accessible and scalable generation of Llama is here. Native multimodality, mixture-of-experts models, super long context windows, step changes in performance, and unparalleled efficiency. All in easy-to-deploy sizes custom fit for how you want to use it. performance.
+  url: https://www.llama.com/llama4/
+  url_label: Meta
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Llama3
+  summary: Pretrained and instruction-tuned 8B/70B models optimized for dialogue; emphasizes safety and performance.
+  url: https://llama.meta.com/llama3/
+  url_label: Meta
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Code Llama
+  summary: Code-specialized version of Llama 2; trained on code-specific datasets.
+  url: https://huggingface.co/codellama
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: dolphin-2.2.1-mistral-7b
+  summary: Apache-2.0 licensed; enhanced for empathy, personal advice, and multi-turn conversations.
+  url: https://huggingface.co/cognitivecomputations/dolphin-2.2.1-mistral-7b
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Intel/neural-chat-7b-v3-1
+  summary: Fine-tuned Mistral-7B using Open-Orca/SlimOrca data; aligned with DPO algorithm.
+  url: https://huggingface.co/Intel/neural-chat-7b-v3-1
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Magistral-Small-2506
+  summary: Building upon Mistral Small 3.1 (2503), with added reasoning capabilities, undergoing SFT from Magistral Medium traces and RL on top, it's a small, efficient reasoning model with 24B parameters.
+  url: https://huggingface.co/mistralai/Magistral-Small-2506
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Mistral 7B
+  summary: Mistral AI's first LLM; general-purpose natural language processing.
+  url: https://docs.mistral.ai/
+  url_label: Mistral Docs
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Mistral Small 3.1
+  summary: Building upon Mistral Small 3 (2501), Mistral Small 3.1 (2503) adds state-of-the-art vision understanding and enhances long context capabilities up to 128k tokens without compromising text performance. With 24 billion parameters, this model achieves top-tier capabilities in both text and vision tasks.
+  url: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: LLaVA
+  summary: Visual instruction tuning for vision-language models with GPT-4 capabilities.
+  url: https://github.com/haotian-liu/LLaVA
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: FreeWilly2
+  summary: High-performing instruction-tuned model (details unspecified).
+  url: https://huggingface.co/stabilityai/StableBeluga2
+  url_label: Hugging Face
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: LLaMA2
+  summary: Next-gen open-source LLM by Meta; optimized for dialogue and safety.
+  url: https://ai.meta.com/llama/
+  url_label: Meta
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: InternLM
+  summary: Open-sourced 7B base and chat models for practical scenarios.
+  url: https://github.com/InternLM/InternLM
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Gorilla
+  summary: Enables LLMs to invoke APIs for tool usage.
+  url: https://github.com/ShishirPatil/gorilla
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Falcon LLM
+  summary: Open-sourced by Technology Innovation Institute for research/commercial use.
+  url: https://falconllm.tii.ae/
+  url_label: Falcon LLM
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: MPT-7B
+  summary: Efficient, commercially usable LLM by MosaicML.
+  url: https://www.mosaicml.com/blog/mpt-7b
+  url_label: MosaicML
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: StableLM
+  summary: Stability AI's ongoing LLM series development.
+  url: https://github.com/stability-AI/stableLM/
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: LLaMA
+  summary: Meta's foundational LLM.
+  url: https://github.com/facebookresearch/llama
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: PaLM-E
+  summary: Embodied multimodal language model (combines vision and language).
+  url: https://palm-e.github.io/
+  url_label: Website
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Stanford Alpaca
+  summary: Instruction-following LLaMA model.
+  url: https://github.com/tatsu-lab/stanford_alpaca
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: ChatGLM-6B
+  summary: Open bilingual (EN/CN) dialogue model.
+  url: https://github.com/THUDM/ChatGLM-6B
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: OpenFlamingo
+  summary: Framework for training multimodal LLMs.
+  url: https://github.com/mlfoundations/open_flamingo
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Guanaco
+  summary: Details unspecified (assumed conversational model).
+  url: https://guanaco-model.github.io/
+  url_label: Website
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Alpaca-LoRA
+  summary: Low-Rank Adaptation (LoRA) for training Alpaca-style models.
+  url: https://github.com/tloen/alpaca-lora
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: NVIDIA NeMo
+  summary: Toolkit for building and training conversational AI models.
+  url: https://github.com/NVIDIA/NeMo
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: RWKV Language Model
+  summary: Alternative architecture for efficient long-context modeling.
+  url: https://github.com/BlinkDL/RWKV-LM
+  url_label: GitHub
+- category: models
+  section: Open Weight Models
+  tags:
+  - open-weight-models
+  name: Dolly
+  summary: Instruction-following LLM by Databricks; commercially licensed.
+  url: https://github.com/databrickslabs/dolly
+  url_label: GitHub
+- category: models
+  section: Small Models
+  tags:
+  - small-models
+  name: Xiaomi MiMo-V2.6 Distill-Qwen-9B
+  summary: 9B dense distill of the MiMo-V2.6 family for single-GPU use; MIT.
+  url: https://www.eesel.ai/blog/xiaomi-mimo-v2-6-review
+  url_label: Blog
+- category: models
+  section: Small Models
+  tags:
+  - small-models
+  name: google/gemma-4-E2B
+  summary: Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages.
+  url: https://huggingface.co/google/gemma-4-E2B
+  url_label: Hugging Face
+- category: models
+  section: Small Models
+  tags:
+  - small-models
+  name: google/gemma-4-E4B
+  summary: Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages.
+  url: https://huggingface.co/google/gemma-4-E4B
+  url_label: Hugging Face
+- category: models
+  section: Small Models
+  tags:
+  - small-models
+  name: LFM2.5-1.2B-Instruct
+  summary: LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 architecture with extended pre-training and reinforcement learning.
+  url: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
+  url_label: Hugging Face
+- category: models
+  section: Small Models
+  tags:
+  - small-models
+  name: TinySwallow-1.5B
+  summary: TinySwallow-1.5B is a Japanese compact language model created through TAID (Temporally Adaptive Interpolated Distillation), sakana ai's new knowledge distillation method.
+  url: https://huggingface.co/SakanaAI/TinySwallow-1.5B
+  url_label: Hugging Face
+- category: models
+  section: Small Models
+  tags:
+  - small-models
+  name: Gemma-2B
+  summary: Google's SLM
+  url: https://huggingface.co/google/gemma-2b
+  url_label: Hugging Face
+- category: models
+  section: Small Models
+  tags:
+  - small-models
+  name: Llama-3.2-3B
+  summary: The Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out).
+  url: https://huggingface.co/meta-llama/Llama-3.2-3B
+  url_label: Hugging Face
+- category: openclaw
+  section: null
+  tags: []
+  name: openclaw
+  summary: Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞
+  url: https://github.com/openclaw/openclaw
+- category: openclaw
+  section: null
+  tags: []
+  name: HiClaw
+  summary: HiClaw is an open-source Collaborative Multi-Agent OS for transparent, human-in-the-loop task coordination via Matrix rooms.
+  url: https://github.com/alibaba/hiclaw
+- category: openclaw
+  section: null
+  tags: []
+  name: NemoClaw
+  summary: NVIDIA NemoClaw is an open source stack that simplifies running OpenClaw always-on assistants safely. It installs the NVIDIA OpenShell runtime, part of NVIDIA Agent Toolkit, a secure environment for running autonomous agents, with inference routed through NVIDIA cloud.
+  url: https://github.com/NVIDIA/NemoClaw
+- category: openclaw
+  section: null
+  tags: []
+  name: picoclaw
+  summary: 🦐 PicoClaw is an ultra-lightweight personal AI Assistant inspired by nanobot, refactored from the ground up in Go through a self-bootstrapping process, where the AI agent itself drove the entire architectural migration and code optimization.
+  url: https://github.com/sipeed/picoclaw
+- category: openclaw
+  section: null
+  tags: []
+  name: nanoclaw
+  summary: A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK.
+  url: https://github.com/qwibitai/nanoclaw
+- category: openclaw
+  section: null
+  tags: []
+  name: zeroclaw
+  summary: Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀
+  url: https://github.com/zeroclaw-labs/zeroclaw
+- category: openclaw
+  section: null
+  tags: []
+  name: nanobot
+  summary: 🐈 nanobot is an ultra-lightweight personal AI assistant inspired by OpenClaw.
+  url: https://github.com/HKUDS/nanobot
+- category: openclaw
+  section: null
+  tags: []
+  name: ironclaw
+  summary: IronClaw is OpenClaw inspired implementation in Rust focused on privacy and security.
+  url: https://github.com/nearai/ironclaw
+- category: openclaw
+  section: null
+  tags: []
+  name: nullclaw
+  summary: Fastest, smallest, and fully autonomous AI assistant infrastructure written in Zig.
+  url: https://github.com/nullclaw/nullclaw
+- category: openclaw
+  section: null
+  tags: []
+  name: moltis
+  summary: A Rust-native personal AI assistant with voice, memory, sandboxing, MCP tools, and multi-channel access.
+  url: https://github.com/moltis-org/moltis
+- category: openclaw
+  section: null
+  tags: []
+  name: zclaw
+  summary: Your personal AI assistant at all-in 888KiB (~35KB in app code). Running on an ESP32. GPIO, cron, custom tools, memory, and more.
+  url: https://github.com/tnm/zclaw
+- category: openclaw
+  section: null
+  tags: []
+  name: clawlet
+  summary: Ultra-lightweight and efficient personal AI assistant.
+  url: https://github.com/mosaxiv/clawlet
+- category: openclaw
+  section: null
+  tags: []
+  name: rosclaw
+  summary: ROS2 meets OpenClaw.
+  url: https://github.com/PlaiPin/rosclaw
+- category: openclaw
+  section: null
+  tags: []
+  name: geminiclaw
+  summary: Personal autonomous agent powered by Gemini CLI. Orchestrates scheduling, persistent memory, MCP tools, and multi-channel messaging.
+  url: https://github.com/e-mon/geminiclaw
+- category: openclaw
+  section: null
+  tags: []
+  name: ClawX
+  summary: ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal.
+  url: https://github.com/ValueCell-ai/ClawX
+- category: openclaw
+  section: null
+  tags: []
+  name: claw-empire
+  summary: Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company.
+  url: https://github.com/GreenSheep01201/claw-empire
+- category: openclaw
+  section: null
+  tags: []
+  name: BlueStacks AI
+  summary: Runtime for the Claws OpenClaw —and the AI agents not yet imagined.
+  url: https://bluestacks.ai/
+- category: openclaw
+  section: null
+  tags: []
+  name: ATOMIC BOT
+  summary: The Fastest Way to Run OpenClaw 🦞
+  url: https://github.com/AtomicBot-ai/atomicbot
+- name: LLM-Reading-List
+  category: other-resources
+  section: null
+  summary: LLM papers I'm reading, mostly on inference and model compression
+  url: https://github.com/evanmiller/LLM-Reading-List
+  tags:
+  - other-resources
+- name: Guidance
+  category: other-resources
+  section: null
+  summary: Guidance enables you to control modern language models more effectively and efficiently than traditional prompting or chaining.
+  url: https://github.com/microsoft/guidance
+  tags:
+  - other-resources
+- name: DataFit
+  category: other-resources
+  section: null
+  summary: ChatGPT Prompts Community
+  url: https://datafit.ai/
+  tags:
+  - other-resources
+- name: Alpaca Electron
+  category: other-resources
+  section: null
+  summary: Alpaca Electron is built from the ground-up to be the easiest way to chat with the alpaca AI models. No command line or compiling needed!
+  url: https://github.com/ItsPi3141/alpaca-electron
+  tags:
+  - other-resources
+- name: Open-Assistant
+  category: other-resources
+  section: null
+  summary: Open Assistant is a project meant to give everyone access to a great chat based large language model.
+  url: https://github.com/LAION-AI/Open-Assistant
+  tags:
+  - other-resources
+- name: OpenAI Cookbook
+  category: other-resources
+  section: null
+  summary: The OpenAI Cookbook shares example code for accomplishing common tasks with the OpenAI API
+  url: https://github.com/openai/openai-cookbook
+  tags:
+  - other-resources
+- name: FlexGen
+  category: other-resources
+  section: null
+  summary: FlexGen is a high-throughput generation engine for running large language models with limited GPU memory.
+  url: https://github.com/FMInference/FlexGen
+  tags:
+  - other-resources
+- name: ColossalAI
+  category: other-resources
+  section: null
+  summary: ''
+  url: https://github.com/hpcaitech/ColossalAI
+  tags:
+  - other-resources
+- name: nanoGPT
+  category: other-resources
+  section: null
+  summary: ''
+  url: https://github.com/karpathy/nanoGPT
+  tags:
+  - other-resources
+- name: Evals
+  category: other-resources
+  section: null
+  summary: Evals is a framework for evaluating OpenAI models and an open-source registry of benchmarks.
+  url: https://github.com/openai/evals
+  tags:
+  - other-resources
+- name: LangFlow
+  category: other-resources
+  section: null
+  summary: A User Interface For LangChain
+  url: https://github.com/logspace-ai/langflow
+  tags:
+  - other-resources
+- name: FastChat
+  category: other-resources
+  section: null
+  summary: An open platform for training, serving, and evaluating large language model based chatbots.
+  url: https://github.com/lm-sys/FastChat#fine-tuning
+  tags:
+  - other-resources
+- name: SGPT
+  category: other-resources
+  section: null
+  summary: 'SGPT: GPT Sentence Embeddings for Semantic Search'
+  url: https://github.com/Muennighoff/sgpt
+  tags:
+  - other-resources
+- name: GPT4All
+  category: other-resources
+  section: null
+  summary: Demo, data and code to train an assistant-style large language model with ~800k GPT-3.5-Turbo Generations based on LLaMa
+  url: https://github.com/nomic-ai/gpt4all
+  tags:
+  - other-resources
+- name: FastChat
+  category: other-resources
+  section: null
+  summary: An open platform for training, serving, and evaluating large language model based chatbots.
+  url: https://github.com/lm-sys/FastChat
+  tags:
+  - other-resources
+- name: openplayground
+  category: other-resources
+  section: null
+  summary: An LLM playground you can run on your laptop
+  url: https://github.com/nat/openplayground
+  tags:
+  - other-resources
+- name: Japanese-Alpaca-LoRA
+  category: other-resources
+  section: null
+  summary: ''
+  url: https://github.com/kunishou/Japanese-Alpaca-LoRA
+  tags:
+  - other-resources
+- category: prompt-engineering
+  section: null
+  tags: []
+  name: Prompt Engineering Guide
+  summary: A comprehensive guide on prompt engineering
+  url: https://github.com/dair-ai/Prompt-Engineering-Guide
+- category: prompt-engineering
+  section: null
+  tags: []
+  name: ChatGPT DAN
+  summary: Collection of DAN (Do Anything Now) prompts
+  url: https://github.com/0xk1h0/ChatGPT_DAN
+- category: prompt-engineering
+  section: null
+  tags: []
+  name: Awesome Prompt Engineering
+  summary: Curated list of prompt engineering resources
+  url: https://github.com/promptslab/Awesome-Prompt-Engineering
+- category: prompt-engineering
+  section: null
+  tags: []
+  name: ChatGPT Prompts
+  summary: General purpose ChatGPT prompts
+  url: https://github.com/yokoffing/ChatGPT-Prompts
+- category: prompt-engineering
+  section: null
+  tags: []
+  name: ChatGPT Prompts for Data Science
+  summary: Specialized prompts for data science tasks
+  url: https://github.com/travistangvh/ChatGPT-Data-Science-Prompts
+- category: prompt-engineering
+  section: null
+  tags: []
+  name: Prompts
+  summary: Collection of ChatGPT prompts
+  url: https://prompts.chat/
+- category: prompt-engineering
+  section: null
+  tags: []
+  name: ChatGPT & Bing AI Prompts
+  summary: Prompts for both ChatGPT and Bing AI
+  url: https://github.com/yokoffing/ChatGPT-Prompts#chatgpt-prompts
+- category: prompt-engineering
+  section: null
+  tags: []
+  name: Learn Prompting
+  summary: Free, open-source guide on prompt engineering
+  url: https://github.com/trigaten/Learn_Prompting
+- category: prototyping
+  section: null
+  tags: []
+  name: Gradio
+  summary: Gradio is the fastest way to demo your machine learning model with a friendly web interface so that anyone can use it, anywhere!
+  url: https://www.gradio.app/
+- category: prototyping
+  section: null
+  tags: []
+  name: Streamlit
+  summary: Turn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.
+  url: https://streamlit.io/
+- category: prototyping
+  section: null
+  tags: []
+  name: Mesop
+  summary: Create web apps without the complexity of frontend development. Used at Google for rapid AI app development.
+  url: https://mesop-dev.github.io/mesop/
+- name: Perplexica
+  category: tools
+  section: null
+  summary: Perplexica is an AI-powered search engine. It is an Open source alternative to Perplexity AI
+  url: https://github.com/ItzCrazyKns/Perplexica
+  tags:
+  - tools
+- name: Ollama
+  category: tools
+  section: null
+  summary: Get up and running with Llama 2 and other large language models locally
+  url: https://github.com/jmorganca/ollama
+  tags:
+  - tools
+- name: LangSmith
+  category: tools
+  section: null
+  summary: LangSmith lets you export data to common formats such as CSV or JSONL directly in the web app.
+  url: https://smith.langchain.com/
+  tags:
+  - tools
+- name: gpt-repository-loader
+  category: tools
+  section: null
+  summary: gpt-repository-loader is a command-line tool that converts the contents of a Git repository into a text format, preserving the structure of the files and file contents.
+  url: https://github.com/mpoon/gpt-repository-loader
+  tags:
+  - tools
+- name: ShareGPT
+  category: tools
+  section: null
+  summary: ShareGPT is an open-source Chrome Extension for you to share your wildest ChatGPT conversations with one click.
+  url: https://github.com/domeccleston/sharegpt
+  tags:
+  - tools

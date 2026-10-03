@@ -1,4 +1,4 @@
-![agent-frameworks](./agent-frameworks.png)
+![agent-frameworks](./agent-frameworks.webp)
 
 # Agent Frameworks
 

@@ -1,4 +1,4 @@
-![libraries](./libraries.png)
+![libraries](./libraries.webp)
 
 # Libraries
 

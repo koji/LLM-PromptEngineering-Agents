@@ -1,4 +1,5 @@
-![prompt-engineering](./prompt-engineering.png)
+![prompt-engineering](./prompt-engineering.webp)
+
 # Prompt Engineering
 
 Guides, prompt collections, and learning resources for prompt design.
