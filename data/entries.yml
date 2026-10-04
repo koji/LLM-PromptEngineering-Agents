@@ -178,6 +178,8 @@ categories:
 - slug: skills
   title: Skills
   layout: sections
+  image: skills.webp
+  image_alt: skills
 - slug: tools
   title: Tools
   layout: sections
