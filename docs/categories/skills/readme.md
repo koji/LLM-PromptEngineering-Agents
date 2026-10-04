@@ -1,3 +1,5 @@
+![skills](./skills.webp)
+
 # Skills
 
 [Back to README](../../readme.md)
