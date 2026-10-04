@@ -869,7 +869,7 @@ def build_site(data, out_dir, repo_url):
     data_json = data_json.replace("</", "<\\/")
 
     js = SITE_JS.replace("__DATA_JSON__", data_json)
-    page = SITE_HTML.replace("__TITLE__", "LLM · Prompt Engineering · Agents")
+    page = SITE_HTML.replace("__TITLE__", "Awesome LLM Agents")
     page = page.replace(
         "__DESC__",
         "Curated links for ChatGPT, LLMs, prompt engineering, agent frameworks, "
