@@ -507,8 +507,8 @@ header.top p { margin: 0; color: var(--muted); }
   border: 1px solid var(--border); background: var(--card); color: var(--fg);
 }
 .filters { padding: 12px 0 4px; display: flex; flex-wrap: wrap; gap: 8px; }
-.tabs { display: flex; gap: 2px; overflow-x: auto; margin-top: 10px;
-  border-bottom: 1px solid var(--border); }
+.tabs { display: flex; flex-wrap: wrap; gap: 2px 4px; margin-top: 10px;
+  border-bottom: 1px solid var(--border); padding-bottom: 8px; }
 .tab { background: none; border: none; padding: 10px 14px; font-size: 0.9rem;
   color: var(--muted); cursor: pointer; white-space: nowrap;
   border-bottom: 2px solid transparent; margin-bottom: -1px; font-family: inherit; }
