@@ -888,7 +888,7 @@ def build_site(data, out_dir, repo_url):
 # CLI
 # ---------------------------------------------------------------------------
 
-REPO_URL = "https://github.com/koji/LLM-PromptEngineering-Agents"
+REPO_URL = "https://github.com/koji/awesome-llm-agents"
 
 
 def load_data(path):
