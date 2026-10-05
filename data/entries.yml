@@ -732,6 +732,17 @@ entries:
   section: CLI Coding Tools
   tags:
   - cli-coding-tools
+  name: YYLO
+  summary: Task-driven subagent orchestration, receipt-backed repo changes, typed task/merge/release boundaries, multi-agent (Claude, Codex, Gemini)
+  extra:
+    usage: Terminal-based, npm install, Git-native, orchestrates coding agents
+    cli_native: 'Yes'
+  url: https://github.com/yylo-dev/yylo
+  url_label: YYLO
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
   - chatgpt-api-free
   subsection: ChatGPT API (Free)
   name: ChatGPT API
