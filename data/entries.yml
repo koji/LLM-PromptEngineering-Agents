@@ -732,6 +732,17 @@ entries:
   section: CLI Coding Tools
   tags:
   - cli-coding-tools
+  name: YYLO
+  summary: Command-line orchestrator for coding agents; typed task, validation, and merge boundaries
+  extra:
+    usage: Terminal-based, npm install (@yylo/cli), receipt-backed repository changes
+    cli_native: 'Yes'
+  url: https://github.com/yylo-dev/yylo
+  url_label: YYLO
+- category: ide-and-cli
+  section: CLI Coding Tools
+  tags:
+  - cli-coding-tools
   - chatgpt-api-free
   subsection: ChatGPT API (Free)
   name: ChatGPT API
