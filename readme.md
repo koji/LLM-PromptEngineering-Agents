@@ -1,4 +1,4 @@
-![00023-1789164435](./top.png)
+![Awesome LLM Agents](./top.png)
 
 # Awesome LLM Agents
 
