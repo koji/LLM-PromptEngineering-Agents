@@ -32,6 +32,20 @@ categories:
   description: Desktop-native applications for LLM usage.
   image: desktop-applications.webp
   image_alt: desktop-applications
+- slug: hermes-agent
+  title: Hermes Agent
+  layout: table
+  description: Hermes Agent and its ecosystem.
+  sections:
+  - fields:
+    - name
+    - summary
+    - url
+    headers:
+    - Name
+    - Description
+    - URL
+    name_bold: false
 - slug: ide-and-cli
   title: IDE and CLI Tools
   layout: table
@@ -467,6 +481,13 @@ entries:
   url: https://github.com/dory111111/babyagi-streamlit
   tags:
   - aplications
+- name: Hermes Agent
+  category: hermes-agent
+  section: null
+  summary: Open-source (MIT) personal AI agent by Nous Research with persistent memory, self-improving skills, scheduled automations, and isolated subagents. Runs on Telegram, Discord, Slack, WhatsApp, Signal, Email, and CLI, with sandboxed execution backends (local, Docker, SSH, Singularity, Modal).
+  url: https://hermes-agent.nousresearch.com/
+  tags:
+  - hermes-agent
 - name: BingGPT
   category: desktop-applications
   section: null
