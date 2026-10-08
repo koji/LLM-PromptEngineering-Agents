@@ -1134,6 +1134,14 @@ entries:
   section: Closed Models
   tags:
   - closed-models
+  name: Claude Haiku 5.5
+  summary: Released Oct 7, 2026. Cheapest and fastest Claude to date: $0.10 input / $0.50 output per 1M tokens for prompts up to 100k (~75% cheaper than Haiku 4.5); first Haiku-class model with adjustable effort; 1M context window.
+  url: https://www.anthropic.com/claude-haiku-5-5
+  url_label: Anthropic
+- category: models
+  section: Closed Models
+  tags:
+  - closed-models
   name: Claude Opus 5.5
   summary: Released Sep 22, 2026. $4 input / $20 output per 1M tokens; 66.4% on Terminal-Bench 4.0 (xhigh effort).
   url: https://www.anthropic.com/news/claude-opus-5-5
