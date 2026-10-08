@@ -2382,3 +2382,8 @@ entries:
   url: https://github.com/K-Dense-AI/scientific-agent-skills
   tags:
   - skills
+- name: Tale
+  category: aplications
+  summary: Open-source project workspace for teams and AI agents, with task boards, persistent agent sandboxes, and shared review of results; available self-hosted or as managed cloud.
+  url: https://github.com/tale-project/tale
+  tags: [ai-agents, project-management, self-hosted]
