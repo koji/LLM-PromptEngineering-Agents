@@ -137,3 +137,8 @@ https://github.com/yoheinakajima/babyagi
 ## babyagi-streamlit
 
 https://github.com/dory111111/babyagi-streamlit
+
+## Tale
+
+Open-source project workspace for teams and AI agents, with task boards, persistent agent sandboxes, and shared review of results; available self-hosted or as managed cloud.  
+https://github.com/tale-project/tale
