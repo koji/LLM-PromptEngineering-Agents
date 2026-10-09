@@ -1918,6 +1918,14 @@ entries:
   section: Small Models
   tags:
   - small-models
+  name: Tholos-2B
+  summary: 2B tool-use model fine-tuned from MiniCPM5-2B to act as the agent in the Tholos workspace app; passes 137 of 160 Tholos-Bench scenarios against 112 for MiniCPM5-2B. 1.56 GB Q4_K_M GGUF for Ollama and llama.cpp; Apache-2.0.
+  url: https://huggingface.co/mertkayacs/Tholos-2B
+  url_label: Hugging Face
+- category: models
+  section: Small Models
+  tags:
+  - small-models
   name: Xiaomi MiMo-V2.6 Distill-Qwen-9B
   summary: 9B dense distill of the MiMo-V2.6 family for single-GPU use; MIT.
   url: https://www.eesel.ai/blog/xiaomi-mimo-v2-6-review
